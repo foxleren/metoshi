@@ -1,0 +1,267 @@
+.footer {
+    display: flex;
+    margin: 0 9.23%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 26px 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 933px;
+    background: url(../../../public/images/bg_bottom.png) 50% 0 no-repeat;
+    z-index: -1;
+}
+
+.footer .copy {
+    margin: 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #817499;
+}
+
+.botmenu ul ul {
+    display: none;
+    right: 15px;
+    top: 25px;
+    z-index: 300;
+    position: absolute;
+    background: #000000;
+    width: 259px;
+    box-sizing: border-box;
+    padding: 7px 12px;
+    padding-top: 17px;
+    box-shadow: 8px 8px 12px rgba(21, 8, 54, 0.4);
+    border-radius: 16px;
+}
+
+.botmenu ul ul li:before {
+    display: none;
+}
+
+.botmenu ul ul li {
+    padding: 5px 0;
+    font-size: 16px;
+    background: none;
+    position: relative;
+    margin: 0;
+}
+
+.botmenu ul ul li a {
+    display: block;
+    line-height: 48px;
+    padding-left: 13px;
+    border-radius: 8px;
+}
+
+.botmenu ul ul li a span {
+    margin-right: 9px;
+    display: inline-flex;
+    width: 22px;
+    height: 20px;
+    align-content: center;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+.botmenu ul ul li a.soon {
+    opacity: 0.6;
+}
+
+.botmenu ul ul li a.soon:hover {
+    background: transparent;
+    cursor: default;
+}
+
+.botmenu ul ul li a.soon i {
+    position: absolute;
+    content: "";
+    right: 12px;
+    top: calc(50% - 12px);
+    width: 44px;
+    height: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-style: normal;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+}
+
+.botmenu ul ul {
+    top: auto;
+    bottom: 32px;
+}
+
+.botmenu ul li {
+    white-space: nowrap;
+}
+
+.botmenu ul {
+    display: flex;
+    font-size: 16px;
+    line-height: 130%;
+    list-style-type: none;
+}
+
+.botmenu ul li {
+    padding: 0 30px;
+    position: relative;
+    background: none;
+    margin-bottom: 0;
+}
+
+.botmenu ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 24px;
+}
+
+.botmenu ul li:not(:first-child):before {
+    position: absolute;
+    content: "";
+    left: -6px;
+    top: calc(50% - 7px);
+    width: 12px;
+    height: 12px;
+    background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z' fill='white'/%3E%3C/svg%3E%0A")
+    0 0 no-repeat;
+}
+
+.lang {
+    line-height: 21px;
+    font-size: 16px;
+}
+
+.lang * {
+    vertical-align: top;
+}
+
+.lang .sep {
+    background: #817499;
+    width: 1px;
+    display: inline-block;
+    height: 21px;
+}
+
+.lang a,
+.lang p {
+    padding: 0 8px;
+}
+
+.lang p {
+    display: inline-block;
+    margin: 0;
+}
+
+.lang a {
+    color: #817499;
+    text-decoration: none;
+}
+
+.lang a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        margin: 0 20px;
+    }
+
+    .botmenu ul li {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 899px) {
+    .botmenu ul li a:hover {
+        color: #ffff14;
+    }
+
+    .botmenu ul ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+    }
+
+    .botmenu ul li.parent:hover ul {
+        display: block;
+    }
+
+    .botmenu ul li.parent:hover > a:before {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        filter: none;
+    }
+
+    .botmenu ul li.parent {
+        margin-top: -10px;
+        padding-top: 10px;
+    }
+
+    .botmenu ul li.parent > a:before {
+        transition-duration: 0.2s;
+        position: absolute;
+        content: "";
+        right: 0;
+        top: calc(50% - 2px);
+        width: 9px;
+        height: 6px;
+        background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.31673 5.99999L0.0737305 1.75699L1.48873 0.342987L4.31673 3.17199L7.14473 0.342987L8.55973 1.75699L4.31673 5.99999Z' fill='%23FFFF14'/%3E%3C/svg%3E%0A")
+        0 0 no-repeat;
+        filter: brightness(1000);
+    }
+
+    .botmenu ul li.parent > a {
+        position: relative;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width: 945px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .botmenu ul {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .botmenu ul {
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .botmenu ul li:not(:first-child):before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .botmenu ul li {
+        font-size: 12px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+}

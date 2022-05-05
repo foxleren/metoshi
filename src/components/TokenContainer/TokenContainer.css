@@ -1,0 +1,223 @@
+.tokens_list {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.token-list-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 92%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.04);
+    padding: 11px 23px;
+    border-radius: 32px;
+}
+
+.token-list-container {
+    margin-top: 15px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.switcher-option-item {
+    padding: 11px 25px;
+}
+
+.switcher-option-item-button-1,
+.switcher-option-item-button-2,
+.switcher-option-item-button-3 {
+    padding: 10px 56px;
+    border-radius: 32px;
+    transition: 0.3s linear;
+}
+
+.switcher-option-item-button-1:hover,
+.switcher-option-item-button-2:hover,
+.switcher-option-item-button-3:hover {
+    cursor: pointer;
+}
+
+.switcher-option-item-button-1.selected,
+.switcher-option-item-button-2.selected,
+.switcher-option-item-button-3.selected {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.token_item,
+.empty_token_item {
+    margin: 5px 10px;
+    width: 250px;
+    height: 417px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.token_item_image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.token_item_image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.empty_token_item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty_token_icon {
+    max-width: 67px;
+}
+
+/*----------------*/
+.token_item.color1 .token_item_image {
+    background-color: #f98be5;
+}
+
+.token_item.color2 .token_item_image {
+    background-color: #ffff14;
+}
+
+.token_item.color3 .token_item_image {
+    background-color: #ff14b1;
+}
+
+.token_item.color4 .token_item_image {
+    background-color: #14ff63;
+}
+
+.token_item.color5 .token_item_image {
+    background-color: #62c7fe;
+}
+
+/*-----------------*/
+.token_item_name {
+    background: rgba(21, 6, 51, 0.2);
+    border-radius: 0 0 12px 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 186px;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+.token_item_desc {
+    display: none;
+}
+
+.token_item_buy {
+    padding: 15px 15px 0;
+}
+
+.token_item_buy .button {
+    margin-bottom: 5px;
+}
+
+.token-quantity {
+    font-weight: 900;
+    font-size: 36px;
+    position: absolute;
+    bottom: 160px;
+    left: 180px;
+    visibility: hidden;
+}
+
+.token-quantity.isVisible {
+    visibility: visible;
+}
+
+.token_item_amount {
+    margin: 0;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    color: #817499;
+}
+
+@media screen and (max-width: 1050px) {
+    .token-list-switcher {
+        visibility: hidden;
+        /*---Спрятал switcher---*/
+        display: none;
+    }
+
+    .tokens_list {
+        margin-bottom: 0;
+    }
+
+    .tokens_list {
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .token_item {
+        margin-bottom: 20px;
+        width: auto;
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 12px;
+        overflow: hidden;
+        height: auto;
+        display: flex;
+    }
+
+    .empty_token_item {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .token_item.color1 .token_item_image,
+    .token_item.color2 .token_item_image,
+    .token_item.color3 .token_item_image,
+    .token_item.color4 .token_item_image,
+    .token_item.color5 .token_item_image {
+        background: none;
+    }
+
+    .token_item_name {
+        padding-left: 160px;
+        background: rgba(255, 255, 255, 0.04);
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        width: auto;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .token_item_desc {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 0;
+        text-align: center;
+        color: #c2abcb;
+        margin: 60px 10px 10px;
+    }
+
+    .token_item_image {
+        min-width: 160px;
+        width: 160px;
+        height: auto;
+        max-height: 160px;
+    }
+
+    .token_item_buy {
+        display: none;
+    }
+}

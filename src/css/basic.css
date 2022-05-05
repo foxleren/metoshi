@@ -1,0 +1,28 @@
+a {
+    color: #fff;
+    outline: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+body {
+    font: 20px/140% "Georama", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    color: #fff;
+    background: #150633 url(../../public/images/topbg.png) 50% 0 no-repeat;
+}
+
+body * {
+    font-family: "Georama", sans-serif;
+}
+
+body.ru * {
+    font-family: "Ubuntu", sans-serif;
+}

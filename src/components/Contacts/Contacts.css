@@ -1,0 +1,182 @@
+.contacts {
+    margin-bottom: 60px;
+    padding-top: 76px;
+}
+
+.contacts_head {
+    text-align: center;
+}
+
+.contacts h2 {
+    margin-bottom: 85px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 115px;
+}
+
+.contacts h2:before,
+.contacts h2:after {
+    position: absolute;
+    content: "";
+    left: -77px;
+    top: 76px;
+    width: 69px;
+    height: 72px;
+    background: url(../../../public/images/contacts_stars.svg) 0 0 no-repeat;
+}
+
+.contacts h2:after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    left: auto;
+    right: -77px;
+    top: auto;
+    bottom: 43px;
+}
+
+.contacts .social {
+    max-width: 1230px;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 0;
+    flex-wrap: wrap;
+}
+
+.contacts .social > a,
+.contacts .social > .a {
+    display: inline-block;
+    margin: 0 42px 65px 42px;
+    position: relative;
+}
+
+.contacts .social a img,
+.contacts .social .a img {
+    transition-duration: 0.2s;
+    filter: brightness(2000%);
+}
+
+.contacts .social > a:before,
+.contacts .social > .a:before {
+    position: absolute;
+    content: "";
+    left: -12px;
+    top: -12px;
+    width: 142px;
+    height: 142px;
+    border: 1px solid #fff;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.contacts .social img {
+    display: block;
+}
+
+.contacts .social a:hover > img,
+.contacts .social > .a:hover > img {
+    filter: none;
+}
+
+.contacts .a:hover .socialpp_list {
+    display: block;
+}
+
+.contacts .socialpp_list {
+    position: absolute;
+    display: none;
+    left: -45px;
+    bottom: 100%;
+    padding-bottom: 26px;
+}
+
+.contacts .socialpp_listIn {
+    padding: 12px 12px 2px 12px;
+    background: #000000;
+    border-radius: 16px;
+    display: block;
+}
+
+.contacts .socialpp_list a {
+    display: flex;
+    align-items: center;
+    line-height: 45px;
+    padding-left: 12px;
+    padding-right: 29px;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.contacts .socialpp_list img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contacts .socialpp_list a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 1100px) {
+    .contacts {
+        margin-bottom: 54px;
+    }
+
+    .contacts .social {
+        width: 750px;
+    }
+
+    .contacts .social > a:before,
+    .contacts .social > .a:before {
+        left: -7px;
+        top: -7px;
+        width: 83px;
+        height: 83px;
+    }
+
+    .contacts .social > a > img,
+    .contacts .social > .a > img {
+        width: 71px;
+        height: auto;
+    }
+
+    .contacts .social > a,
+    .contacts .social > .a {
+        margin: 0 26px 36px 26px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contacts .social {
+        width: auto;
+        text-align: center;
+    }
+
+    .contacts h2 {
+        font-size: 48px;
+        line-height: 57px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contacts h2:before {
+        top: 15px;
+        left: -60px;
+    }
+
+    .contacts h2:after {
+        bottom: 15px;
+        right: -60px;
+    }
+}
