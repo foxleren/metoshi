@@ -15,6 +15,10 @@ function Welcome() {
                 <div className="welcome_pet pet1"></div>
                 <div className="welcome_pet pet2"></div>
             </div>
+            <div className="welcome-button-container">
+                <div className="button-enter-metoland">Enter Metoland</div>
+                <div className="button-buy-meto">Buy $Meto</div>
+            </div>
         </section>
     )
 }

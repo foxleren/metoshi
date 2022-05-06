@@ -3,7 +3,7 @@
 .GameProcessDemo-container {
     display: flex;
     justify-content: center;
-    padding: 40px 10px;
+    padding: 40px 10px 10px 10px;
     flex-direction: column;
     align-items: center;
 }
@@ -38,7 +38,7 @@
     font-style: normal;
 }
 
-.title, .title.sub {
+.GameProcessDemo-title, .GameProcessDemo-title.sub {
     font-weight: 700;
     font-size: 30px;
     padding: 40px 10px 5px 10px;
@@ -51,11 +51,11 @@
     text-transform: uppercase;
 }
 
-.title.sub {
+.GameProcessDemo-title.sub {
     padding: 0px 10px 40px 10px;
 }
 
-.text {
+.GameProcessDemo-text {
     font-weight: 500;
     font-size: 30px;
     color: white;

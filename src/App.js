@@ -7,11 +7,11 @@ import Welcome from './components/Welcome/Welcome'
 import TokenContainer from './components/TokenContainer/TokenContainer'
 import GameDescription from './components/GameDescription/GameDescription'
 import GameProcessDemo from './components/GameProcessDemo/GameProcessDemo'
+import GameplayDescription from "./components/GameplayDescription/GameplayDescription";
 import Faq from './components/Faq/Faq'
 import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
 import Popup from './components/Popup/Popup'
-
 
 
 import {useState} from "react";
@@ -170,6 +170,7 @@ function App() {
             <TokenContainer NFT={values.NFT} UserChests={values.userChests} UserNFT={values.userNFT}></TokenContainer>
             <GameDescription></GameDescription>
             <GameProcessDemo></GameProcessDemo>
+            <GameplayDescription></GameplayDescription>
             <Faq></Faq>
             <Contacts></Contacts>
             <Footer></Footer>

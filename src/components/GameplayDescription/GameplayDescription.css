@@ -1,0 +1,87 @@
+.GameplayDescription-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 150px 0;
+}
+
+.GameplayDescription-container .title {
+    font-family: 'Georama', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 115px;
+    padding: 0px 5px 45px 5px;
+    letter-spacing: 0.02em;
+}
+
+.GameplayDescription-title-span {
+    background-image: url(../../../public/images/GameplayBackground.svg);
+    width: 710px;
+    height: 150px;
+    background-repeat: no-repeat;
+    /* top: 300px; */
+    position: relative;
+    padding: -23px;
+    /* bottom: 3px; */
+    top: 110px;
+    z-index: -1000;
+}
+
+.GameplayDescription-part1, .GameplayDescription-part2 {
+    display: flex;
+    max-width: 1265px;
+}
+
+.GameplayDescription-part2 {
+    margin-top: 20px;
+}
+
+.GameplayDescription-box, .GameplayDescription-box.full {
+    margin: 0 10px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 60px;
+    padding: 20px 40px;
+    width: 50%;
+}
+
+.GameplayDescription-box.full {
+    width: 100% !important;
+}
+
+.GameplayDescription-box-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+    padding: 10px 0;
+}
+
+.GameplayDescription-text-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.GameplayDescription-text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 135.4%;
+    /* or 35px */
+
+    letter-spacing: 0.02em;
+}
+
+.GameplayDescription-text span {
+    color: #FFDD14;
+}
+
+.GameplayDescription-text-container svg {
+    /*padding: 5px;*/
+    padding-right: 10px;
+    min-width: 30px;
+}

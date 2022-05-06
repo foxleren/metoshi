@@ -10,16 +10,15 @@ function GameProcessDemo() {
             </div>
         </div>
         <div className="GameProcessDemo-text-container">
-            <div className="title">
+            <div className="GameProcessDemo-title">
                 Добро пожаловать в волшебный мир красных панд
             </div>
-            <div className="title sub">METOLAND</div>
-            <div className="text">
+            <div className="GameProcessDemo-title sub">METOLAND</div>
+            <div className="GameProcessDemo-text">
                 Стройте и улучшайте здания, добывайте ресурсы, в том числе золото. Повышайте популяцию вашего поселения,
                 следите за уровнем счастья ваших пандочек и конечно зарабатывайте токен МЕТО.
             </div>
         </div>
-
     </div>)
 }
 
