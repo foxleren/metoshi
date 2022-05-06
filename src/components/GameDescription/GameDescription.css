@@ -1,0 +1,51 @@
+
+.character-description-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 60px;
+    padding: 20px 40px;
+    font-size: 30px;
+}
+
+.character-description-text-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /*font-size: 30px;*/
+}
+
+.character-description-text-container svg {
+    padding: 10px;
+    min-width: 30px;
+}
+
+.character-description-text-container.sub {
+    padding: 5px 0 5px 80px;
+}
+
+.character-description-type {
+    color: #FFDD14;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.character-description-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.character-description-text span {
+    background-image: url(../../../public/images/CharacterDescriptionStroke.svg);
+    padding: 19px 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.character-description-type .span1 {
+    color: white;
+}
+
+.character-description-type .span2 {
+    color: #B114FF;
+}

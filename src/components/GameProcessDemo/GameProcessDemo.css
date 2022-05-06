@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap');
+
+.GameProcessDemo-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GameProcessDemo-image {
+    max-width: 1250px;
+}
+
+.GameProcessDemo-stroke1 {
+    background-image: url(../../../public/images/GameProcessSpan2.svg);
+    padding: 18px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.GameProcessDemo-stroke2 {
+    background-image: url(../../../public/images/GameProcessSpan1.svg);
+    padding: 13px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.GameProcessDemo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    text-align: center;
+    font-family: 'Georama', sans-serif;
+    font-style: normal;
+}
+
+.title, .title.sub {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 40px 10px 5px 10px;
+    color: white;
+    line-height: 149%;
+    /* or 45px */
+    max-width: 1000px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.title.sub {
+    padding: 0px 10px 40px 10px;
+}
+
+.text {
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    line-height: 149%;
+    /* or 45px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
