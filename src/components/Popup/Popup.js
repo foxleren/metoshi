@@ -2,10 +2,13 @@ import React from 'react'
 
 import './Popup.css'
 
+import {closePopup} from '../../js/script.js'
+
 function Popup(){
+
     return (
         <div className="popup">
-            <div className="popup_close"></div>
+            <div className="popup_close" onClick={closePopup}></div>
             <div className="popup_content">
                 <div className="popup_content_item">
                     <img src="/images/redpanda3.png" alt=""/>

@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './Header.css'
+import $ from 'jquery';
+import {toggleHeaderMenu} from '../../js/script.js'
 
 function Header() {
     return (<header className="header">
@@ -18,7 +20,7 @@ function Header() {
             <a className="header_contract" href="" target="_blank">
                 0x16cd...f345
             </a>
-            <div className="header_menu_trigger">
+            <div className="header_menu_trigger" onClick={toggleHeaderMenu}>
                 <span></span>
                 <span></span>
                 <span></span>

@@ -10,6 +10,8 @@ import Contacts from './components/Contacts/Contacts'
 import Footer from './components/Footer/Footer'
 import Popup from './components/Popup/Popup'
 
+
+
 import {useState} from "react";
 
 function App() {
@@ -65,7 +67,7 @@ function App() {
             userChests: [
                 {
                     img: "/images/1.png",
-                    name: "EBAL MAT",
+                    name: "Help",
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
                         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                     quantity: 12,
@@ -90,24 +92,24 @@ function App() {
                     price: 13000,
                     amount: "-"
                 },
-                {
-                    img: "/images/4.png",
-                    name: "Diggers's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-"
-                },
-                {
-                    img: "/images/5.png",
-                    name: "Miner's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-"
-                }
+                // {
+                //     img: "/images/4.png",
+                //     name: "Diggers's chest",
+                //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                //     quantity: 12,
+                //     price: 13000,
+                //     amount: "-"
+                // },
+                // {
+                //     img: "/images/5.png",
+                //     name: "Miner's chest",
+                //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                //     quantity: 12,
+                //     price: 13000,
+                //     amount: "-"
+                // }
             ],
             userNFT: [
                 {
