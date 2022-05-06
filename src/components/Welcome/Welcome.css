@@ -1,5 +1,5 @@
 .welcome {
-    padding-top: 100px;
+    padding: 100px 0;
     overflow: hidden;
     max-width: 100%;
 }
@@ -34,7 +34,7 @@
     max-width: 1160px;
     margin: 0 auto;
     position: relative;
-    padding: 40px 0 223px;
+    padding: 40px 0 160px;
 }
 
 .welcome_text h1 {
@@ -109,25 +109,19 @@
 .button-enter-metoland, .button-buy-meto {
     width: 400px;
     height: 90px;
-    text-transform: uppercase;
-    line-height: 93px;
-    padding: 5px;
+    line-height: 90px;
+    padding: 0 28px;
     font-size: 20px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    border-radius: 12px;
     position: relative;
     cursor: pointer;
     transition: background-position 0.2s;
     text-decoration: none;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 50.1%, rgba(255, 255, 255, 0.2) 100%);
-    background-size: 300% 100%;
+    background-size: 200%;
     text-align: center;
-    transition: 0.9s ease-in-out;
-
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    text-transform: uppercase;
 }
 
 .button-buy-meto:hover {
@@ -135,15 +129,13 @@
 }
 
 .button-enter-metoland:hover {
-    background-position: 100% 0;
-    moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    background-position: right center;
+    /*background: linear-gradient(90deg, #B114FF 15%, #B114FF 40%, #FF1493 55%);*/
 }
 
 .button-enter-metoland {
-    background: linear-gradient(90deg, #B114FF 0%, #B114FF 32.81%, #FF1493 100%);
+    background-image: linear-gradient(90deg, #B114FF 0%, #B114FF 32.81%, #FF1493 100%);
+    /*background:grey;*/
 }
 
 .button-buy-meto {
