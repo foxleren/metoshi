@@ -17,19 +17,144 @@ function App() {
             username: "Name",
             NFT: [
                 {
-                    imgLink: "http://",
-                    tokenName: "token",
-                    tokenDescription: "Token description",
-                    tokenQuantity: 12,
-                    tokenPrice: 13000,
-                    tokenAmount: "-"
+                    img: "/images/1.png",
+                    name: "Builder's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/2.png",
+                    name: "Farmer's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/3.png",
+                    name: "Lumberjack's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/4.png",
+                    name: "Diggers's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/5.png",
+                    name: "Miner's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
                 }
             ],
             userChests: [
-                {}
+                {
+                    img: "/images/1.png",
+                    name: "EBAL MAT",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/2.png",
+                    name: "Farmer's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/3.png",
+                    name: "Lumberjack's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/4.png",
+                    name: "Diggers's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/5.png",
+                    name: "Miner's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                }
             ],
             userNFT: [
-                {}
+                {
+                    img: "/images/1.png",
+                    name: "USERNFT",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/2.png",
+                    name: "Farmer's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/3.png",
+                    name: "Lumberjack's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                {
+                    img: "/images/4.png",
+                    name: "Diggers's chest",
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                    quantity: 12,
+                    price: 13000,
+                    amount: "-"
+                },
+                // {
+                //     img: "/images/5.png",
+                //     name: "Miner's chest",
+                //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
+                //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                //     quantity: 12,
+                //     price: 13000,
+                //     amount: "-"
+                // }
             ]
         }
     )
@@ -37,7 +162,7 @@ function App() {
         <div className="App">
             <Header></Header>
             <Welcome></Welcome>
-            <TokenContainer></TokenContainer>
+            <TokenContainer NFT={values.NFT} UserChests={values.userChests} UserNFT={values.userNFT}></TokenContainer>
             <Faq></Faq>
             <Contacts></Contacts>
             <Footer></Footer>

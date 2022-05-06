@@ -27,7 +27,7 @@
     padding: 11px 25px;
 }
 
-.switcher-option-item-button-1,
+.switcher-option-item-button,
 .switcher-option-item-button-2,
 .switcher-option-item-button-3 {
     padding: 10px 56px;
@@ -35,13 +35,13 @@
     transition: 0.3s linear;
 }
 
-.switcher-option-item-button-1:hover,
+.switcher-option-item-button:hover,
 .switcher-option-item-button-2:hover,
 .switcher-option-item-button-3:hover {
     cursor: pointer;
 }
 
-.switcher-option-item-button-1.selected,
+.switcher-option-item-button.selected,
 .switcher-option-item-button-2.selected,
 .switcher-option-item-button-3.selected {
     background-color: rgba(255, 255, 255, 0.04);
