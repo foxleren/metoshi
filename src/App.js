@@ -14,12 +14,12 @@ import Footer from './components/Footer/Footer'
 import Popup from './components/Popup/Popup'
 
 
-import {useState} from "react";
+import React, {useState} from "react";
 import {IntlProvider} from 'react-intl'
 
 import {LOCALES} from './i18n/locales'
 import {messages} from './i18n/messages'
-
+let loc = 'Ru';
 function App() {
     const [values, setValues] = useState({
         username: "Name", NFT: [
@@ -139,11 +139,24 @@ function App() {
             comment: "сбор камня"
         }]
     })
-    const locale = LOCALES.RUSSIAN
+    // let locale = LOCALES.RUSSIAN
 
-    return (<IntlProvider messages={messages[locale]} locale={locale} defaultLocale={LOCALES.RUSSIAN}>
+    const [selectedLocale, setLocale] = React.useState(LOCALES.RUSSIAN)
+
+    function handleLocaleChange(locale) {
+        console.log(locale)
+        if (locale === "Ru" && selectedLocale !== LOCALES.RUSSIAN) {
+            setLocale(LOCALES.RUSSIAN)
+            loc = 'Ru'
+        } else if (locale === "En" && selectedLocale !== LOCALES.ENGLISH) {
+            setLocale(LOCALES.ENGLISH)
+            loc = 'En'
+        }
+    }
+
+    return (<IntlProvider messages={messages[selectedLocale]} locale={selectedLocale} defaultLocale={LOCALES.RUSSIAN}>
             <div className="App">
-                <Header></Header>
+                <Header selectedLocale={loc} changeLanguage={(locale) => handleLocaleChange(locale)}></Header>
                 <Welcome></Welcome>
                 <TokenContainer NFT={values.NFT} UserChests={values.userChests}
                                 UserNFT={values.userNFT}></TokenContainer>

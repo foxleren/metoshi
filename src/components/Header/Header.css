@@ -70,11 +70,19 @@
 }
 
 .header_lang_item {
+    color: #817499;
     padding: 8px;
     line-height: 24px;
     font-size: 20px;
     position: relative;
     transition: color 0.2s;
+}
+
+.header_lang_item.selected {
+    color: white;
+}
+.header_lang_item:hover {
+    cursor: pointer;
 }
 
 .header_lang_item:before {

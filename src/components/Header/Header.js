@@ -3,7 +3,13 @@ import React from 'react';
 import './Header.css'
 import {toggleHeaderMenu} from '../../js/script.js'
 
-function Header() {
+function Header(props) {
+    function SetRussian() {
+        props.changeLanguage("Ru")
+    }
+    function SetEnglish(){
+        props.changeLanguage("En")
+    }
     return (
         <header className="header-container">
             <div className="header-top">
@@ -25,8 +31,9 @@ function Header() {
             </div>
             <div className="header-bottom">
                 <div className="header_langs">
-                    <a className="header_lang_item">ENG</a>
-                    <a className="header_lang_item" href="https://metoshi.com/ru/">RUS</a>
+                    {console.log(props.selectedLocale)}
+                    <div className={props.selectedLocale !== 'Ru'? "header_lang_item selected": "header_lang_item"} onClick={SetEnglish} >ENG</div>
+                    <div className={props.selectedLocale === 'Ru'? "header_lang_item selected": "header_lang_item"} onClick={SetRussian}>RUS</div>
                 </div>
             </div>
         </header>
