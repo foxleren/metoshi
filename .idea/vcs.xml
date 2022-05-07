@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Metoshi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/i18n_react_intl_starter" vcs="Git" />
   </component>
 </project>

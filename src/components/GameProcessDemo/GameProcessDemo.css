@@ -3,15 +3,16 @@
 .GameProcessDemo-container {
     display: flex;
     justify-content: center;
-    padding: 40px 10px 10px 10px;
+    padding: 40px 5px 10px 5px;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    /*width: 95%;*/
 }
 
 .GameProcessDemo-image {
     max-width: 1250px;
     width: 100%;
+    /*padding: 10px;*/
 }
 
 .GameProcessDemo-stroke1 {
@@ -20,14 +21,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+
 }
 
 .GameProcessDemo-stroke2 {
     background-image: url(../../../public/images/GameProcessSpan1.svg);
-    padding: 12px;
+    padding: 20px 25px 20px 25px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    display: flex;
+    justify-content: center;
 }
 
 .GameProcessDemo-text-container {
@@ -71,30 +75,62 @@
 
 @media screen and (max-width:1200px){
     .GameProcessDemo-stroke1 {
-        padding: 16px;
+        padding: 20px 16px 20px 16px;
     }
 
     .GameProcessDemo-stroke2 {
-        padding: 7px;
+        padding: 15px 20px 15px 20px;
     }
 }
 
 @media screen and (max-width:900px){
     .GameProcessDemo-stroke1 {
-        padding: 12px;
+        padding: 16px 13px;
     }
 
     .GameProcessDemo-stroke2 {
-        padding: 5px;
+        padding: 13px 17px;
     }
 }
 
 @media screen and (max-width:800px){
     .GameProcessDemo-stroke1 {
-        padding: 7px;
+        padding: 12px 10px;
     }
 
     .GameProcessDemo-stroke2 {
-        padding: 5px;
+        padding: 10px 10px;
     }
 }
+
+
+@media screen and (max-width:600px){
+    .GameProcessDemo-stroke1 {
+        padding: 9px 6px;
+    }
+
+    .GameProcessDemo-stroke2 {
+        padding: 6px 6px;
+    }
+}
+
+@media screen and (max-width:550px){
+    .GameProcessDemo-stroke1 {
+        padding: 6px 6px;
+    }
+
+    .GameProcessDemo-stroke2 {
+        padding: 6px 6px;
+    }
+}
+
+
+/*@media screen and (max-width:400px){*/
+/*    .GameProcessDemo-stroke1 {*/
+/*        padding: 7px;*/
+/*    }*/
+
+/*    .GameProcessDemo-stroke2 {*/
+/*        padding: 4px 3px 4px 3px;*/
+/*    }*/
+/*}*/

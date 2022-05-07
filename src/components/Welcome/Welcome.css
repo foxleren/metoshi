@@ -118,12 +118,13 @@
     border-radius: 12px;
     position: relative;
     cursor: pointer;
-    transition: background-position 0.2s;
+    /*transition: background-position 0.2s;*/
     text-decoration: none;
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 50.1%, rgba(255, 255, 255, 0.2) 100%);
     background-size: 200%;
     text-align: center;
     text-transform: uppercase;
+    transition: 0.3s ease-in-out;
 }
 
 .button-buy-meto:hover {

@@ -15,165 +15,148 @@ import Popup from './components/Popup/Popup'
 
 
 import {useState} from "react";
+import {IntlProvider} from 'react-intl'
 
+import {LOCALES} from './i18n/locales'
+import {messages} from './i18n/messages'
 
 function App() {
     const [values, setValues] = useState({
-            username: "Name",
-            NFT: [
-                {
-                    img: "/images/1.png",
-                    name: "Builder's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-",
-                    comment: "сбор урожая"
-                },
-                {
-                    img: "/images/3.png",
-                    name: "Lumberjack's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-",
-                    comment: "сбор дерева"
+        username: "Name", NFT: [
+            {
+                img: "/images/2.png",
+                name: "Farmer's chest",
+                chestId: 1,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор урожая"
+            }, {
+                img: "/images/3.png",
+                name: "Lumberjack's chest",
+                chestId: 2,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор дерева"
 
-                },
-                {
-                    img: "/images/4.png",
-                    name: "Diggers's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-",
-                    comment: "сбор глины"
+            }, {
+                img: "/images/4.png",
+                name: "Diggers's chest",
+                chestId: 3,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор глины"
 
-                },
-                {
-                    img: "/images/5.png",
-                    name: "Miner's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-",
-                    comment: "сбор камня"
-                }
-            ],
-            userChests: [
-                {
-                    img: "/images/1.png",
-                    name: "Help",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-"
-                },
-                {
-                    img: "/images/2.png",
-                    name: "Farmer's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-"
-                },
-                {
-                    img: "/images/3.png",
-                    name: "Lumberjack's chest",
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                        'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    quantity: 12,
-                    price: 13000,
-                    amount: "-"
-                },
-                // {
-                //     img: "/images/4.png",
-                //     name: "Diggers's chest",
-                //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                //     quantity: 12,
-                //     price: 13000,
-                //     amount: "-"
-                // },
-                // {
-                //     img: "/images/5.png",
-                //     name: "Miner's chest",
-                //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                //     quantity: 12,
-                //     price: 13000,
-                //     amount: "-"
-                // }
-            ],
-            userNFT:
-                [
-                    {
-                        img: "/images/1.png",
-                        name: "USERNFT",
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                            'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                        quantity: 12,
-                        price: 13000,
-                        amount: "-"
-                    },
-                    {
-                        img: "/images/2.png",
-                        name: "Farmer's chest",
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                            'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                        quantity: 12,
-                        price: 13000,
-                        amount: "-"
-                    },
-                    {
-                        img: "/images/3.png",
-                        name: "Lumberjack's chest",
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                            'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                        quantity: 12,
-                        price: 13000,
-                        amount: "-"
-                    },
-                    {
-                        img: "/images/4.png",
-                        name: "Diggers's chest",
-                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                            'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                        quantity: 12,
-                        price: 13000,
-                        amount: "-"
-                    },
-                    // {
-                    //     img: "/images/5.png",
-                    //     name: "Miner's chest",
-                    //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' +
-                    //         'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                    //     quantity: 12,
-                    //     price: 13000,
-                    //     amount: "-"
-                    // }
-                ]
-        }
-    )
-    return (
-        <div className="App">
-            <Header></Header>
-            <Welcome></Welcome>
-            <TokenContainer NFT={values.NFT} UserChests={values.userChests} UserNFT={values.userNFT}></TokenContainer>
-            <GameDescription></GameDescription>
-            <GameProcessDemo></GameProcessDemo>
-            <GameplayDescription></GameplayDescription>
-            <Faq></Faq>
-            <Contacts></Contacts>
-            <Footer></Footer>
-            <Popup></Popup>
-        </div>
+            }, {
+                img: "/images/5.png",
+                name: "Miner's chest",
+                chestId: 4,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор камня"
+            }], userChests: [{
+            img: "/images/2.png",
+            name: "Farmer's chest",
+            chestId: 1,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор урожая"
+        }, {
+            img: "/images/3.png",
+            name: "Lumberjack's chest",
+            chestId: 2,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор дерева"
+
+        }, {
+            img: "/images/4.png",
+            name: "Diggers's chest",
+            chestId: 3,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор глины"
+
+        }, {
+            img: "/images/5.png",
+            name: "Miner's chest",
+            chestId: 4,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор камня"
+        }], userNFT: [{
+            img: "/images/2.png",
+            name: "Farmer's chest",
+            chestId: 1,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор урожая"
+        }, {
+            img: "/images/3.png",
+            name: "Lumberjack's chest",
+            chestId: 2,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор дерева"
+
+        }, {
+            img: "/images/4.png",
+            name: "Diggers's chest",
+            chestId: 3,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор глины"
+
+        }, {
+            img: "/images/5.png",
+            name: "Miner's chest",
+            chestId: 4,
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            quantity: 12,
+            price: 13000,
+            amount: "-",
+            comment: "сбор камня"
+        }]
+    })
+    const locale = LOCALES.RUSSIAN
+
+    return (<IntlProvider messages={messages[locale]} locale={locale} defaultLocale={LOCALES.RUSSIAN}>
+            <div className="App">
+                <Header></Header>
+                <Welcome></Welcome>
+                <TokenContainer NFT={values.NFT} UserChests={values.userChests}
+                                UserNFT={values.userNFT}></TokenContainer>
+                <GameDescription></GameDescription>
+                <GameProcessDemo></GameProcessDemo>
+                <GameplayDescription></GameplayDescription>
+                <Faq></Faq>
+                <Contacts></Contacts>
+                <Footer></Footer>
+                <Popup></Popup>
+            </div>
+        </IntlProvider>
+
     )
 }
 
