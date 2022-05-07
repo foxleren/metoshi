@@ -31,7 +31,6 @@ function Header(props) {
             </div>
             <div className="header-bottom">
                 <div className="header_langs">
-                    {console.log(props.selectedLocale)}
                     <div className={props.selectedLocale !== 'Ru'? "header_lang_item selected": "header_lang_item"} onClick={SetEnglish} >ENG</div>
                     <div className={props.selectedLocale === 'Ru'? "header_lang_item selected": "header_lang_item"} onClick={SetRussian}>RUS</div>
                 </div>

@@ -2,7 +2,10 @@ import React from 'react'
 
 import './GameProcessDemo.css'
 
+import {useIntl} from 'react-intl'
+
 function GameProcessDemo() {
+    let intl = useIntl()
     return (<div className="GameProcessDemo-container">
         <div className="GameProcessDemo-stroke1">
             <div className="GameProcessDemo-stroke2">
@@ -11,12 +14,11 @@ function GameProcessDemo() {
         </div>
         <div className="GameProcessDemo-text-container">
             <div className="GameProcessDemo-title">
-                Добро пожаловать в волшебный мир красных панд
+                {intl.formatMessage({id:'game_process_demo_title_part1'})}
             </div>
-            <div className="GameProcessDemo-title sub">METOLAND</div>
+            <div className="GameProcessDemo-title sub">  {intl.formatMessage({id:'game_process_demo_title_part2'})}</div>
             <div className="GameProcessDemo-text">
-                Стройте и улучшайте здания, добывайте ресурсы, в том числе золото. Повышайте популяцию вашего поселения,
-                следите за уровнем счастья ваших пандочек и конечно зарабатывайте токен МЕТО.
+                {intl.formatMessage({id:'game_process_demo_text'})}
             </div>
         </div>
     </div>)

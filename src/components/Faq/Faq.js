@@ -4,9 +4,30 @@ import './Faq.css'
 
 import {toggleFaqItem} from '../../js/script.js'
 
+import {useIntl} from 'react-intl'
+
+function GetFaqItems() {
+    let intl = useIntl()
+    return [{
+        title: intl.formatMessage({id: 'faq_item_title1'}), content: intl.formatMessage({id: 'faq_item_content1'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title2'}), content: intl.formatMessage({id: 'faq_item_content2'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title3'}), content: intl.formatMessage({id: 'faq_item_content3'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title4'}), content: intl.formatMessage({id: 'faq_item_content4'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title5'}), content: intl.formatMessage({id: 'faq_item_content5'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title6'}), content: intl.formatMessage({id: 'faq_item_content6'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title7'}), content: intl.formatMessage({id: 'faq_item_content7'})
+    }]
+}
+
 function Faq() {
-    return (
-        <section className="faq">
+    let faqItems = GetFaqItems()
+    return (<section className="faq">
             <div className="faq_in flex">
                 <div className="title">
                     <h2>
@@ -15,46 +36,13 @@ function Faq() {
                     </h2>
                 </div>
                 <div className="accordeon">
-                    {faqItems.map((faqItem, index) => (
-                        <div className="item" key={index}>
+                    {faqItems.map((faqItem, index) => (<div className="item" key={index}>
                             <p className="ttl" onClick={(e) => toggleFaqItem(e)}>{faqItem.title}</p>
                             <div className="item_in">{faqItem.content}</div>
-                        </div>
-                    ))}
+                        </div>))}
                 </div>
             </div>
-        </section>
-    )
+        </section>)
 }
 
 export default Faq
-
-let faqItems = [
-    {
-        title: "Who is Metoshi?",
-        content: "The critically endangered small red panda. Lives in the\n " +
-            "southeastern part of the Himalayas. The panda is found in the\n " +
-            "forests of China and India. Several hundred animals have been\n " +
-            "recorded in Nepal. This cute creature is listed on the Endangered\n " +
-            "Species Act. Let's help all together these cute, funny red pandas\n " +
-            "!!!"
-    },
-    {
-        title: "Who is Metoshi?",
-        content: "The critically endangered small red panda. Lives in the\n " +
-            "southeastern part of the Himalayas. The panda is found in the\n " +
-            "forests of China and India. Several hundred animals have been\n " +
-            "recorded in Nepal. This cute creature is listed on the Endangered\n " +
-            "Species Act. Let's help all together these cute, funny red pandas\n " +
-            "!!!"
-    },
-    {
-        title: "Who is Metoshi?",
-        content: "The critically endangered small red panda. Lives in the\n " +
-            "southeastern part of the Himalayas. The panda is found in the\n " +
-            "forests of China and India. Several hundred animals have been\n " +
-            "recorded in Nepal. This cute creature is listed on the Endangered\n " +
-            "Species Act. Let's help all together these cute, funny red pandas\n " +
-            "!!!"
-    }
-]

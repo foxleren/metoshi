@@ -1,8 +1,11 @@
 import React from "react"
 
-import './GameDescription.css'
+import './CharacterDescription.css'
 
-function GameDescription() {
+import {useIntl} from 'react-intl'
+
+function CharacterDescription() {
+    let intl = useIntl()
     return (<section className="character-description">
         <div className="character-description-container">
             <div className="character-description-text-container">
@@ -20,8 +23,8 @@ function GameDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-text">
-                    Каждый персонаж имеет три вида редкости:
-                    <span>normal, rare, epic
+                    {intl.formatMessage({id:'character_description_sentence1'})}
+                    <span>{intl.formatMessage({id:'character_description_types'})}
                 </span>
                 </div>
             </div>
@@ -40,9 +43,7 @@ function GameDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-text">
-                    Используя их ты можешь увеличить добычу того или иного ресурса или строительства зданий в
-                    зависимости и
-                    редкости.
+                    {intl.formatMessage({id:'character_description_sentence2'})}
                 </div>
             </div>
             <div className="character-description-text-container sub">
@@ -60,9 +61,9 @@ function GameDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    Normal:
-                    <span className="span1"> +200</span>
-                    <span className="span2">%</span>
+                    {intl.formatMessage({id:'character_description_common'})}
+                    <span className="span1">{intl.formatMessage({id:'character_description_common_num'})}</span>
+                    <span className="span2">{intl.formatMessage({id:'character_description_sign'})}</span>
                 </div>
             </div>
             <div className="character-description-text-container sub">
@@ -80,9 +81,9 @@ function GameDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    Rare:
-                    <span className="span1"> +400</span>
-                    <span className="span2">%</span>
+                    {intl.formatMessage({id:'character_description_rare'})}
+                    <span className="span1">{intl.formatMessage({id:'character_description_rare_num'})}</span>
+                    <span className="span2">{intl.formatMessage({id:'character_description_sign'})}</span>
                 </div>
             </div>
             <div className="character-description-text-container sub">
@@ -100,13 +101,13 @@ function GameDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    Epic:
-                    <span className="span1"> +800</span>
-                    <span className="span2">%</span>
+                    {intl.formatMessage({id:'character_description_epic'})}
+                    <span className="span1">{intl.formatMessage({id:'character_description_epic_num'})}</span>
+                    <span className="span2">{intl.formatMessage({id:'character_description_sign'})}</span>
                 </div>
             </div>
         </div>
     </section>)
 }
 
-export default GameDescription
+export default CharacterDescription

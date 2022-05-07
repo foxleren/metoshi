@@ -133,43 +133,52 @@
     top: calc(50% - 7px);
     width: 12px;
     height: 12px;
-    background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z' fill='white'/%3E%3C/svg%3E%0A")
-    0 0 no-repeat;
+    background: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.3' d='M6 0L7.69706 4.30294L12 6L7.69706 7.69706L6 12L4.30294 7.69706L0 6L4.30294 4.30294L6 0Z' fill='white'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
 }
 
-.lang {
-    line-height: 21px;
+.langs {
+    display: flex;
+    justify-content: center;
+}
+
+.lang_item {
+    color: #817499;
+    padding: 8px;
+    line-height: 24px;
     font-size: 16px;
+    position: relative;
+    transition: color 0.2s;
 }
 
-.lang * {
-    vertical-align: top;
+.lang_item.selected {
+    color: white;
 }
 
-.lang .sep {
+.lang_item:hover {
+    cursor: pointer;
+}
+
+.lang_item:before {
+    content: "";
     background: #817499;
     width: 1px;
-    display: inline-block;
-    height: 21px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 7px;
 }
 
-.lang a,
-.lang p {
-    padding: 0 8px;
+.lang_item:first-child:before {
+    display: none;
 }
 
-.lang p {
-    display: inline-block;
-    margin: 0;
-}
-
-.lang a {
+.lang_item[href] {
     color: #817499;
     text-decoration: none;
 }
 
-.lang a:hover {
-    text-decoration: underline;
+.lang_item[href]:hover {
+    color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
@@ -218,8 +227,7 @@
         top: calc(50% - 2px);
         width: 9px;
         height: 6px;
-        background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.31673 5.99999L0.0737305 1.75699L1.48873 0.342987L4.31673 3.17199L7.14473 0.342987L8.55973 1.75699L4.31673 5.99999Z' fill='%23FFFF14'/%3E%3C/svg%3E%0A")
-        0 0 no-repeat;
+        background: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.31673 5.99999L0.0737305 1.75699L1.48873 0.342987L4.31673 3.17199L7.14473 0.342987L8.55973 1.75699L4.31673 5.99999Z' fill='%23FFFF14'/%3E%3C/svg%3E%0A") 0 0 no-repeat;
         filter: brightness(1000);
     }
 

@@ -5,7 +5,7 @@ import './css/style.css'
 import Header from './components/Header/Header'
 import Welcome from './components/Welcome/Welcome'
 import TokenContainer from './components/TokenContainer/TokenContainer'
-import GameDescription from './components/GameDescription/GameDescription'
+import CharacterDescription from './components/CharacterDescription/CharacterDescription'
 import GameProcessDemo from './components/GameProcessDemo/GameProcessDemo'
 import GameplayDescription from "./components/GameplayDescription/GameplayDescription";
 import Faq from './components/Faq/Faq'
@@ -160,12 +160,12 @@ function App() {
                 <Welcome></Welcome>
                 <TokenContainer NFT={values.NFT} UserChests={values.userChests}
                                 UserNFT={values.userNFT}></TokenContainer>
-                <GameDescription></GameDescription>
+                <CharacterDescription></CharacterDescription>
                 <GameProcessDemo></GameProcessDemo>
                 <GameplayDescription></GameplayDescription>
                 <Faq></Faq>
                 <Contacts></Contacts>
-                <Footer></Footer>
+                <Footer selectedLocale={loc} changeLanguage={(locale) => handleLocaleChange(locale)}></Footer>
                 <Popup></Popup>
             </div>
         </IntlProvider>

@@ -1,13 +1,14 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl'
+import {FormattedMessage, useIntl} from 'react-intl'
 
 import './Welcome.css'
 
 function Welcome() {
+    let intl = useIntl()
     return (<section className="welcome">
         <div className="welcome_text">
             <h1>Metoland</h1>
-            <h2>Buy you<span> metoland</span> NFT!</h2>
+            <h2>{intl.formatMessage({id:'welcome_title'})}</h2>
             <div className="welcome_pet pet1"></div>
             <div className="welcome_pet pet2"></div>
         </div>
