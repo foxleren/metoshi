@@ -21,6 +21,7 @@ function TokenContainer(props) {
                 </div>
             </div>))}
         </div>
+
         {activeTab === switcherHeaders[0] && <TableOfTokens ListOfTokens={props.NFT} tabIndex={0}/>}
         {activeTab === switcherHeaders[1] && <TableOfTokens ListOfTokens={props.UserChests} tabIndex={1}/>}
         {activeTab === switcherHeaders[2] && <TableOfTokens ListOfTokens={props.UserNFT} tabIndex={2}/>}

@@ -215,6 +215,10 @@
         position: absolute;
     }
 
+    .token-item-comment-container {
+        display: none;
+    }
+
     .token-item.color1 .token-item-image,
     .token-item.color2 .token-item-image,
     .token-item.color3 .token-item-image,

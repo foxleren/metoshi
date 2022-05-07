@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 150px 0;
+    padding: 10px 10px 150px 10px;
 }
 
 .GameplayDescription-container .title {
@@ -20,10 +20,7 @@
     width: 710px;
     height: 150px;
     background-repeat: no-repeat;
-    /* top: 300px; */
     position: relative;
-    padding: -23px;
-    /* bottom: 3px; */
     top: 110px;
     z-index: -1000;
 }
@@ -35,6 +32,7 @@
 
 .GameplayDescription-part2 {
     margin-top: 20px;
+    justify-content:center;
 }
 
 .GameplayDescription-box, .GameplayDescription-box.full {
@@ -46,7 +44,7 @@
 }
 
 .GameplayDescription-box.full {
-    width: 100% !important;
+    width: 100%;
 }
 
 .GameplayDescription-box-title {
@@ -84,4 +82,66 @@
     /*padding: 5px;*/
     padding-right: 10px;
     min-width: 30px;
+}
+
+@media (max-width: 1050px){
+    .GameplayDescription-part1{
+        align-items: center;
+        flex-direction: column;
+    }
+    .GameplayDescription-box, .GameplayDescription-box.full {
+        max-width: 900px;
+         width: 80%;
+    }
+    .GameplayDescription-box:nth-child(2){
+        margin-top: 20px;
+    }
+}
+
+@media (max-width:800px){
+    .GameplayDescription-container .title {
+        font-size: 80px;
+    }
+    .GameplayDescription-title-span {
+        zoom: 0.8;
+    }
+}
+
+@media (max-width:650px){
+    .GameplayDescription-container .title {
+        font-size: 65px;
+    }
+    .GameplayDescription-title-span {
+        zoom: 0.65;
+    }
+    .GameplayDescription-title-span {
+        top: 125px;
+    }
+}
+
+@media (max-width:500px){
+    .GameplayDescription-container .title {
+        font-size: 50px;
+    }
+    .GameplayDescription-title-span {
+        zoom: 0.5;
+    }
+    .GameplayDescription-title-span {
+        top: 155px;
+    }
+    .GameplayDescription-box, .GameplayDescription-box.full {
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width:375px){
+    .GameplayDescription-container .title {
+        font-size: 40px;
+    }
+    .GameplayDescription-title-span {
+        zoom: 0.4;
+    }
+    .GameplayDescription-title-span {
+        top: 170px;
+    }
 }

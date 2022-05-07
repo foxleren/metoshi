@@ -24,8 +24,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>
@@ -43,8 +43,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>
@@ -62,8 +62,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>
@@ -88,8 +88,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>
@@ -107,8 +107,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>
@@ -126,8 +126,8 @@ function GameplayDescription() {
                                 <radialGradient id="paint0_radial_1695_22" cx="0" cy="0" r="1"
                                                 gradientUnits="userSpaceOnUse"
                                                 gradientTransform="translate(12.1434 11.9989) rotate(90) scale(11.4286)">
-                                    <stop stop-color="#FFE814"/>
-                                    <stop offset="1" stop-color="#FFA114"/>
+                                    <stop stopColor="#FFE814"/>
+                                    <stop offset="1" stopColor="#FFA114"/>
                                 </radialGradient>
                             </defs>
                         </svg>

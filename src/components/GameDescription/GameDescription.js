@@ -12,15 +12,15 @@ function GameDescription() {
                 <defs>
                     <radialGradient id="paint0_radial_1695_79" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                     gradientTransform="translate(11.4286 11.4286) rotate(90) scale(11.4286)">
-                        <stop stop-color="#FFE814"/>
-                        <stop offset="1" stop-color="#FFA114"/>
+                        <stop stopColor="#FFE814"/>
+                        <stop offset="1" stopColor="#FFA114"/>
                     </radialGradient>
                 </defs>
             </svg>
             <div className="character-description-text">
-                Каждый персонаж имеет три вида редкости: <span>
-                <bold> normal</bold>, <bold>rare</bold>, <bold>epic</bold>
-            </span>
+                Каждый персонаж имеет три вида редкости:
+                <span>normal, rare, epic
+                </span>
             </div>
         </div>
         <div className="character-description-text-container">
@@ -31,8 +31,8 @@ function GameDescription() {
                 <defs>
                     <radialGradient id="paint0_radial_1695_79" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                     gradientTransform="translate(11.4286 11.4286) rotate(90) scale(11.4286)">
-                        <stop stop-color="#FFE814"/>
-                        <stop offset="1" stop-color="#FFA114"/>
+                        <stop stopColor="#FFE814"/>
+                        <stop offset="1" stopColor="#FFA114"/>
                     </radialGradient>
                 </defs>
             </svg>
@@ -50,8 +50,8 @@ function GameDescription() {
                 <defs>
                     <radialGradient id="paint0_radial_1695_79" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                     gradientTransform="translate(11.4286 11.4286) rotate(90) scale(11.4286)">
-                        <stop stop-color="#FFE814"/>
-                        <stop offset="1" stop-color="#FFA114"/>
+                        <stop stopColor="#FFE814"/>
+                        <stop offset="1" stopColor="#FFA114"/>
                     </radialGradient>
                 </defs>
             </svg>
@@ -69,8 +69,8 @@ function GameDescription() {
                 <defs>
                     <radialGradient id="paint0_radial_1695_79" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                     gradientTransform="translate(11.4286 11.4286) rotate(90) scale(11.4286)">
-                        <stop stop-color="#FFE814"/>
-                        <stop offset="1" stop-color="#FFA114"/>
+                        <stop stopColor="#FFE814"/>
+                        <stop offset="1" stopColor="#FFA114"/>
                     </radialGradient>
                 </defs>
             </svg>
@@ -88,8 +88,8 @@ function GameDescription() {
                 <defs>
                     <radialGradient id="paint0_radial_1695_79" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                     gradientTransform="translate(11.4286 11.4286) rotate(90) scale(11.4286)">
-                        <stop stop-color="#FFE814"/>
-                        <stop offset="1" stop-color="#FFA114"/>
+                        <stop stopColor="#FFE814"/>
+                        <stop offset="1" stopColor="#FFA114"/>
                     </radialGradient>
                 </defs>
             </svg>
