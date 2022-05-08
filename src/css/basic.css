@@ -8,7 +8,7 @@ a {
 }
 
 body {
-    font: 20px/140% "Georama", Arial, Helvetica, sans-serif;
+    font: 20px/140% "Ubuntu", Arial, Helvetica, sans-serif;
     letter-spacing: 0.02em;
     font-weight: 500;
     position: relative;
@@ -19,10 +19,10 @@ body {
     background: #150633 url(../../public/images/topbg.png) 50% 0 no-repeat;
 }
 
-body * {
-    font-family: "Georama", sans-serif;
-}
+/*body * {*/
+/*    font-family: "Georama", sans-serif;*/
+/*}*/
 
-body.ru * {
-    font-family: "Ubuntu", sans-serif;
-}
+/*body.ru * {*/
+/*    font-family: "Ubuntu", sans-serif;*/
+/*}*/

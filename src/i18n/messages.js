@@ -36,8 +36,8 @@ export const messages = {
         //----------------------CharacterDescription-------------------------------//
         character_description_sentence1: 'Каждый персонаж имеет три вида редкости:',
         character_description_types: 'normal, rare, epic',
-        character_description_sentence2: 'Используя их ты можешь увеличить добычу того или иного ресурса в зависимости от редкости.',
-        character_description_common: 'COMMON: ',
+        character_description_sentence2: 'Используя их, ты можешь увеличить добычу того или иного ресурса в зависимости от редкости.',
+        character_description_common: 'COMMON:',
         character_description_common_num: '+2000',
         character_description_rare: 'RARE: ',
         character_description_rare_num: '+4000',
@@ -52,7 +52,7 @@ export const messages = {
 
 
         //------------------------GameplayDescription--------------------//
-        gameplay_description_box1_title: 'Попадая в мир красных панд ты должен расчистить свою деревню и начать строительство:',
+        gameplay_description_box1_title: 'Попадая в мир красных панд, ты должен расчистить свою деревню и начать строительство:',
         gameplay_description_box1_item1: 'Лесопилка',
         gameplay_description_box1_item2: 'Каменоломня',
         gameplay_description_box1_item3: 'Карьер',
@@ -60,14 +60,14 @@ export const messages = {
         gameplay_description_box1_item5: 'Засевай поля и собирай урожай.',
 
         gameplay_description_box2_title: 'Развивай свою деревню METOLAND собирая:',
-        gameplay_description_box2_item1: 'Дерево,руду, камень, урожай, золото',
+        gameplay_description_box2_item1: 'Дерево, руду, камень, урожай, золото',
         gameplay_description_box2_item2: 'Весь урожай вы можете продать в Фонд Бобра, тем самым получить золото ($METO) или улучшать здание для большего количества добычи',
         gameplay_description_box2_item3: 'В будущем ты также сможешь следить за настроением и повышать уровень счастья своих жителей, которые приносят тебе ЗОЛОТО.',
 
 
         gameplay_description_box3_text1: 'И ',
         gameplay_description_box3_text2: 'САМОЕ ГЛАВНОЕ ',
-        gameplay_description_box3_text3: 'ты можешь ускорить добычу всех ресурсов, строительство всех зданий и, самое приятное, добычу Золотого токена $МЕТО, используя нашу коллекцию Игровых НФТ.',
+        gameplay_description_box3_text3: 'ты можешь ускорить добычу всех ресурсов, строительство всех зданий и, самое приятное, добычу золотого токена $МЕТО, используя нашу коллекцию игровых NFT.',
 
 
         //--------------FAQ------------------//
@@ -150,7 +150,7 @@ export const messages = {
 
 
         //----------------------GameProcessDemo-------------------------//
-        game_process_demo_title_part1: 'Welcome to the magical world of Red Pandas - ',
+        game_process_demo_title_part1: 'Welcome to the magical world of Red Pandas',
         game_process_demo_title_part2: 'METOLAND',
         game_process_demo_text: 'Build and upgrade buildings, extract resources, and boost the population of your Village to earn $METO - the digital GOLD of METOLAND!',
 

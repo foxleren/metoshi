@@ -105,7 +105,8 @@
 
     .GameProcessDemo-title, .GameProcessDemo-title.sub {
         font-size: 20px;
-        padding: 30px 10px 5px 10px;
+        padding: 0px 10px 20px 10px;
+
     }
 
     .GameProcessDemo-text {
@@ -139,7 +140,7 @@
 @media (max-width:500px){
     .GameProcessDemo-title, .GameProcessDemo-title.sub {
         font-size: 16px;
-        padding: 20px 10px 5px 10px;
+        padding: 0px 10px 20px 10px;
     }
 
     .GameProcessDemo-text {

@@ -65,7 +65,7 @@ function CharacterDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    {intl.formatMessage({id: 'character_description_common'})}
+                    {intl.formatMessage({id: 'character_description_common'})}&nbsp;
                     <span className="span1">{intl.formatMessage({id: 'character_description_common_num'})}</span>
                     <span className="span2">{intl.formatMessage({id: 'character_description_sign'})}</span>
                 </div>
@@ -85,7 +85,7 @@ function CharacterDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    {intl.formatMessage({id: 'character_description_rare'})}
+                    {intl.formatMessage({id: 'character_description_rare'})}&nbsp;
                     <span className="span1">{intl.formatMessage({id: 'character_description_rare_num'})}</span>
                     <span className="span2">{intl.formatMessage({id: 'character_description_sign'})}</span>
                 </div>
@@ -105,8 +105,8 @@ function CharacterDescription() {
                     </defs>
                 </svg>
                 <div className="character-description-type">
-                    {intl.formatMessage({id: 'character_description_epic'})}
-                    <span className="span1">{intl.formatMessage({id: 'character_description_epic_num'})}</span>
+                    {intl.formatMessage({id: 'character_description_epic'})}&nbsp;
+                    <span className="span1">{" " + intl.formatMessage({id: 'character_description_epic_num'})}</span>
                     <span className="span2">{intl.formatMessage({id: 'character_description_sign'})}</span>
                 </div>
             </div>

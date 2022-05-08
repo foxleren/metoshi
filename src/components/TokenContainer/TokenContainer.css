@@ -57,7 +57,7 @@
     background: rgba(255, 255, 255, 0.04);
 }
 
-.empty-token-item{
+.empty-token-item {
     min-height: 370px;
 }
 
@@ -95,6 +95,7 @@
     margin: 0 auto;
     font-size: 16px;
     text-align: center;
+
 }
 
 .token-item-desc {
@@ -148,10 +149,10 @@
     font-size: 24px;
     line-height: 95%;
     /* or 23px */
+    margin-bottom: 5px;
 
     text-align: center;
     letter-spacing: 0.02em;
-
     color: rgba(255, 255, 255, 0.56);
 }
 
@@ -242,8 +243,9 @@
     .token-item-buy {
         display: none;
     }
+
     .token-quantity.isVisible {
         /*visibility: visible;*/
-        display:none;
+        display: none;
     }
 }
