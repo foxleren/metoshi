@@ -18,6 +18,17 @@
     /*font-size: 30px;*/
 }
 
+
+.character-description-text-container:nth-child(1) {
+    flex-wrap: wrap;
+}
+
+.character-description-text-container div {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
 .character-description-text-container svg {
     padding: 10px;
     min-width: 30px;
@@ -37,12 +48,13 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.character-description-text span {
+.character-description-text-stroke {
     background-image: url(../../../public/images/CharacterDescriptionStroke.svg);
-    padding: 17px 12px;
+    padding: 21px 12px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    margin-left: 50px;
 }
 
 .character-description-type .span1 {
@@ -56,5 +68,49 @@
 @media screen and (max-width: 1050px) {
     .character-description-container {
         width: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .character-description-container {
+        font-size: 20px;
+    }
+
+    .character-description-type {
+        font-size: 20px;
+    }
+    .character-description-text-stroke {
+        padding: 10px 9px;
+    }
+}
+
+@media (max-width: 500px) {
+    .character-description-container {
+        font-size: 18px;
+    }
+
+    .character-description-type {
+        font-size: 18px;
+    }
+
+    .character-description-text-container.sub {
+        padding: 5px 0 5px 30px;
+    }
+
+    .character-description-text-stroke {
+        padding: 8px 9px;
+    }
+}
+
+@media (max-width: 400px) {
+    .character-description-container {
+        font-size: 16px;
+    }
+
+    .character-description-type {
+        font-size: 16px;
+    }
+    .character-description-text-stroke {
+        padding: 6px 9px;
     }
 }

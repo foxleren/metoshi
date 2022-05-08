@@ -42,6 +42,7 @@
     text-align: center;
     font-family: 'Georama', sans-serif;
     font-style: normal;
+    padding:0 10px;
 }
 
 .GameProcessDemo-title, .GameProcessDemo-title.sub {
@@ -101,6 +102,16 @@
     .GameProcessDemo-stroke2 {
         padding: 10px 10px;
     }
+
+    .GameProcessDemo-title, .GameProcessDemo-title.sub {
+        font-size: 20px;
+        padding: 30px 10px 5px 10px;
+    }
+
+    .GameProcessDemo-text {
+        font-size: 20px;
+        padding: 0px 10px 30px 10px;
+    }
 }
 
 
@@ -125,12 +136,17 @@
 }
 
 
-/*@media screen and (max-width:400px){*/
-/*    .GameProcessDemo-stroke1 {*/
-/*        padding: 7px;*/
-/*    }*/
+@media (max-width:500px){
+    .GameProcessDemo-title, .GameProcessDemo-title.sub {
+        font-size: 16px;
+        padding: 20px 10px 5px 10px;
+    }
 
-/*    .GameProcessDemo-stroke2 {*/
-/*        padding: 4px 3px 4px 3px;*/
-/*    }*/
-/*}*/
+    .GameProcessDemo-text {
+        font-size: 16px;
+        padding: 0px 10px 20px 10px;
+    }
+
+
+
+}

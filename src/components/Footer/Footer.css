@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    margin: 0 9.23%;
+    flex-direction: row;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding: 26px 0;
     align-items: center;
@@ -111,6 +111,8 @@
     font-size: 16px;
     line-height: 130%;
     list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .botmenu ul li {
@@ -240,16 +242,11 @@
 
 @media (max-width: 945px) {
     .footer {
-        display: block;
-        text-align: center;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .footer {
-        display: block;
-        text-align: center;
-    }
 
     .botmenu ul {
         padding: 0;

@@ -32,7 +32,7 @@
 
 .GameplayDescription-part2 {
     margin-top: 20px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .GameplayDescription-box, .GameplayDescription-box.full {
@@ -84,64 +84,98 @@
     min-width: 30px;
 }
 
-@media (max-width: 1050px){
-    .GameplayDescription-part1{
+@media (max-width: 1050px) {
+    .GameplayDescription-part1 {
         align-items: center;
         flex-direction: column;
     }
+
     .GameplayDescription-box, .GameplayDescription-box.full {
         max-width: 900px;
-         width: 80%;
+        width: 80%;
     }
-    .GameplayDescription-box:nth-child(2){
+
+    .GameplayDescription-box:nth-child(2) {
         margin-top: 20px;
     }
 }
 
-@media (max-width:800px){
+@media (max-width: 800px) {
     .GameplayDescription-container .title {
         font-size: 80px;
     }
+
     .GameplayDescription-title-span {
         zoom: 0.8;
     }
+
+    .GameplayDescription-box-title {
+        font-size: 20px;
+    }
+
+    .GameplayDescription-text {
+        font-size: 20px;
+    }
 }
 
-@media (max-width:650px){
+@media (max-width: 650px) {
     .GameplayDescription-container .title {
         font-size: 65px;
     }
+
     .GameplayDescription-title-span {
         zoom: 0.65;
     }
+
     .GameplayDescription-title-span {
         top: 125px;
     }
 }
 
-@media (max-width:500px){
+@media (max-width: 500px) {
     .GameplayDescription-container .title {
         font-size: 50px;
     }
+
     .GameplayDescription-title-span {
         zoom: 0.5;
     }
+
     .GameplayDescription-title-span {
         top: 155px;
     }
+
     .GameplayDescription-box, .GameplayDescription-box.full {
         padding: 15px 20px;
     }
+
+    .GameplayDescription-box-title {
+        font-size: 18px;
+    }
+
+    .GameplayDescription-text {
+        font-size: 18px;
+    }
 }
 
-@media (max-width:375px){
+@media (max-width: 400px) {
     .GameplayDescription-container .title {
         font-size: 40px;
     }
+
     .GameplayDescription-title-span {
         zoom: 0.4;
     }
+
     .GameplayDescription-title-span {
         top: 170px;
+    }
+
+    .GameplayDescription-box-title {
+        font-size: 16px;
+    }
+
+    .GameplayDescription-text {
+        font-size: 16px;
     }
 }

@@ -1,24 +1,38 @@
 import {LOCALES} from './locales'
+import footer from "../components/Footer/Footer";
 
 export const messages = {
     [LOCALES.RUSSIAN]: {
+
+        //--------------------Header-----------------------------//
+        header_menu_home: 'Домой',
+        header_menu_buy: 'Купить NFT',
+        header_menu_contacts: 'Контакты',
+
         //--------------------Welcome----------------------------//
-        welcome_title: 'Открыта продажа NFT Metoland !',
+        welcome_buy_your_nft: 'Купи свой',
+        welcome_enter_metoland: 'Стать частью metoland',
+        welcome_buy: 'Купить',
 
         //-----------------TokenContainer---------------------------//
+        token_container_nft: 'NFT',
+        token_container_my_chests: 'Мои сундуки',
+        token_container_my_nft: 'Мои NFT',
         farmer_chest: 'Сундук фермера',
-        farmer_chest_description: 'При открытии сундука вы получите уникального Фермера случайной редкости. ' + 'В зависимости от редкости НФТ, его бонус к базовой добыче еды на ферме составит от 2000% до 8000%!',
+        farmer_chest_description: 'При открытии сундука вы получите уникального Фермера случайной редкости. В зависимости от редкости НФТ, его бонус к базовой добыче еды на ферме составит от 2000% до 8000%!',
         farmer_chest_accelerator_object: 'добычу еды',
         lumberjack_chest: 'Сундук лесоруба',
-        lumberjack_chest_description: 'При открытии сундука вы получите уникального Лесоруба случайной редкости. ' + 'В зависимости от редкости НФТ, его бонус к базовой добыче дерева на лесопилке составит от 2000% до 8000%!',
+        lumberjack_chest_description: 'При открытии сундука вы получите уникального Лесоруба случайной редкости. В зависимости от редкости НФТ, его бонус к базовой добыче дерева на лесопилке составит от 2000% до 8000%!',
         lumberjack_chest_accelerator_object: 'добычу дерева',
         digger_chest: 'Сундук копателя',
-        digger_chest_description: 'При открытии сундука вы получите уникального Копателя случайной редкости. ' + 'В зависимости от редкости НФТ, его бонус к базовой добыче глины в карьере составит от 2000% до 8000%!',
+        digger_chest_description: 'При открытии сундука вы получите уникального Копателя случайной редкости. В зависимости от редкости НФТ, его бонус к базовой добыче глины в карьере составит от 2000% до 8000%!',
         digger_chest_accelerator_object: 'добычу глины',
         miner_chest: 'Сундук шахтера',
-        miner_chest_description: 'При открытии сундука вы получите уникального Шахтера случайной редкости. ' + 'В зависимости от редкости НФТ, его бонус к базовой добыче камня в шахте составит от 2000% до 8000%!',
+        miner_chest_description: 'При открытии сундука вы получите уникального Шахтера случайной редкости. В зависимости от редкости НФТ, его бонус к базовой добыче камня в шахте составит от 2000% до 8000%!',
         miner_chest_accelerator_object: 'добычу камня',
         chest_accelerates: 'Ускоряет',
+        chest_available: 'В наличии',
+        chest_open: 'Открыть сундук',
 
         //----------------------CharacterDescription-------------------------------//
         character_description_sentence1: 'Каждый персонаж имеет три вида редкости:',
@@ -71,28 +85,50 @@ export const messages = {
         faq_item_title6: 'Что такое сундук рудокопа?',
         faq_item_content6: 'Открыв сундук рудокопа, вы получите одного из уникальных рудокопов, который будет увеличивать количество добываемого в шахте камня, необходимого для строительства других построек. Всего будет выпущено 500 рудокопов: 250 обычных, 150 редких и 100 эпических',
         faq_item_title7: 'Что если у меня несколько NFT персонажей одной профессии?',
-        faq_item_content7: 'На начальном этапе разработки вы сможете поместить в каждое здание одного персонажа соответствующей профессии. В лесопилку — один лесоруб, в шахту — один рудокоп и т.д. Вы сами выберете, кого из персонажей использовать'
+        faq_item_content7: 'На начальном этапе разработки вы сможете поместить в каждое здание одного персонажа соответствующей профессии. В лесопилку — один лесоруб, в шахту — один рудокоп и т.д. Вы сами выберете, кого из персонажей использовать',
+        //------------------------Contacts------------------------//
+        contacts_title: 'Контакты',
 
-
+        //------------------------Footer-----------------------------//
+        footer_our_products: 'Наши сервисы',
+        footer_our_products_comics: 'Комиксы',
+        footer_our_products_farm: 'Фарминг',
+        footer_our_products_soon: 'Скоро',
+        footer_red_panda: 'Красная Панда',
+        footer_tokenomics: 'Токеномика',
+        footer_roadmap: 'Дорожная карта',
+        footer_contacts: 'Контакты'
     }, [LOCALES.ENGLISH]: {
 
+        //--------------------Header-----------------------------//
+        header_menu_home: 'Home',
+        header_menu_buy: 'Buy NFT',
+        header_menu_contacts: 'Contacts',
+
         //--------------------Welcome----------------------------//
-        welcome_title: 'Get ahold of a Metoland NFT!',
+        welcome_buy_your_nft: 'Buy your',
+        welcome_enter_metoland: 'Enter metoland',
+        welcome_buy: 'Buy',
 
         //-----------------TokenContainer---------------------------//
+        token_container_nft: 'NFT',
+        token_container_my_chests: 'My Chests',
+        token_container_my_nft: 'My NFT',
         farmer_chest: 'Farmer\'s Chest',
-        farmer_chest_description: 'Out of your chest, you will receive a unique Farmer NFT of a random rarity. ' + 'Your bonus to the basic food production will range from 2,000% (20x) to 8,000% (80x) depending ' + 'on the rarity of the Farmer !',
+        farmer_chest_description: 'Out of your chest, you will receive a unique Farmer NFT of a random rarity. Your bonus to the basic food production will range from 2,000% (20x) to 8,000% (80x) depending on the rarity of the Farmer !',
         farmer_chest_accelerator_object: 'Food Production',
         lumberjack_chest: 'Lumberjack\'s Chest',
-        lumberjack_chest_description: 'Out of your chest, you will receive a unique Lumberjack NFT of a random rarity. ' + 'Your bonus to the basic wood production will range from 2,000% (20x) to 8,000% (80x) ' + 'depending on the rarity of the Jack !',
+        lumberjack_chest_description: 'Out of your chest, you will receive a unique Lumberjack NFT of a random rarity. Your bonus to the basic wood production will range from 2,000% (20x) to 8,000% (80x) depending on the rarity of the Jack !',
         lumberjack_chest_accelerator_object: 'Wood Production',
         digger_chest: 'Digger\'s Chest',
-        digger_chest_description: 'Out of your chest, you will receive a unique Digger NFT of a random rarity. ' + 'Your bonus to the basic clay extraction will range from 2,000% (20x) to 8,000% (80x) ' + 'depending on the rarity of the Digger !',
+        digger_chest_description: 'Out of your chest, you will receive a unique Digger NFT of a random rarity. Your bonus to the basic clay extraction will range from 2,000% (20x) to 8,000% (80x) depending on the rarity of the Digger !',
         digger_chest_accelerator_object: 'Clay Extraction',
         miner_chest: 'Miner\'s chest',
-        miner_chest_description: 'Out of your chest, you will receive a unique Miner NFT of a random rarity. ' + 'Your bonus to the basic rock extraction will range from 2,000% (20x) to 8,000% (80x) ' + 'depending on the rarity of the Miner !',
+        miner_chest_description: 'Out of your chest, you will receive a unique Miner NFT of a random rarity. Your bonus to the basic rock extraction will range from 2,000% (20x) to 8,000% (80x) depending on the rarity of the Miner !',
         miner_chest_accelerator_object: 'Rock Extraction',
         chest_accelerates: 'Accelerates',
+        chest_available: 'Available',
+        chest_open: 'Open box',
 
 
         //----------------------CharacterDescription-------------------------------//
@@ -133,18 +169,30 @@ export const messages = {
 
         //--------------FAQ------------------//
         faq_item_title1: 'Who is Metoshi?',
-        faq_item_content1: '\n' + 'The critically endangered small red panda. Lives in the\n ' + 'southeastern part of the Himalayas. The panda is found in the\n ' + 'forests of China and India. Several hundred animals have been\n ' + 'recorded in Nepal. This cute creature is listed on the Endangered\n ' + 'Species Act. Let\'s help all together these cute, funny red pandas\n ' + '!!!\n',
+        faq_item_content1: '\nThe critically endangered small red panda. Lives in the\n southeastern part of the Himalayas. The panda is found in the\n forests of China and India. Several hundred animals have been\n recorded in Nepal. This cute creature is listed on the Endangered\n Species Act. Let\'s help all together these cute, funny red pandas\n !!!\n',
         faq_item_title2: 'What is a Builder\'s Chest?',
-        faq_item_content2: 'By opening a Builder\'s Chest you will get one of unique builders who will give you a bonus ' + 'that speeds up building construction. A total of 500 builders of varying rarities will be released: 250 ' + 'common, 150 rare and 100 epic ones',
+        faq_item_content2: 'By opening a Builder\'s Chest you will get one of unique builders who will give you a bonus that speeds up building construction. A total of 500 builders of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
         faq_item_title3: 'What is a Farmer\'s Chest?',
-        faq_item_content3: 'By opening a Farmer\'s Chest you will get one of unique farmers who will increase ' + 'the amount of food produced at the farm. Food is necessary for your pandas. A total of 500 farmers ' + 'of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
+        faq_item_content3: 'By opening a Farmer\'s Chest you will get one of unique farmers who will increase the amount of food produced at the farm. Food is necessary for your pandas. A total of 500 farmers of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
         faq_item_title4: 'What is a Lumberjack\'s Chest?',
-        faq_item_content4: 'By opening a Lumberjack\'s Chest you will get one of unique lumberjacks who will ' + 'increase the amount of wood  produced at the sawmill. Wood is necessary for the construction of' + ' other buildings. A total of 500 lumberjacks of varying rarities will be released: 250 common, 150 ' + 'rare and 100 epic ones',
+        faq_item_content4: 'By opening a Lumberjack\'s Chest you will get one of unique lumberjacks who will increase the amount of wood  produced at the sawmill. Wood is necessary for the construction of other buildings. A total of 500 lumberjacks of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
         faq_item_title5: 'What is a Digger\'s Chest?',
-        faq_item_content5: 'By opening a Digger\'s Chest you will get one of unique digger who will increase the' + ' amount of clay produced at the quarry. Clay is necessary for the construction of other buildings. ' + 'A total of 500 diggers of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
+        faq_item_content5: 'By opening a Digger\'s Chest you will get one of unique digger who will increase the amount of clay produced at the quarry. Clay is necessary for the construction of other buildings. A total of 500 diggers of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
         faq_item_title6: 'What is a Miner\'s Chest?',
-        faq_item_content6: 'By opening a Miner\'s Chest you can get one of unique miners who will increase the ' + 'amount of stone produced at the mine. Stone is necessary for the construction of other buildings. ' + 'A total of 500 miners of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
+        faq_item_content6: 'By opening a Miner\'s Chest you can get one of unique miners who will increase the amount of stone produced at the mine. Stone is necessary for the construction of other buildings. A total of 500 miners of varying rarities will be released: 250 common, 150 rare and 100 epic ones',
         faq_item_title7: 'What if I have several NFTs of characters of the same profession?',
-        faq_item_content7: 'At the initial stage of development you will be able to place one character of each ' + 'profession in their corresponding building: one lumberjack for a sawmill, one miner for a mine, ' + 'and so on. Which character to place is up to you'
+        faq_item_content7: 'At the initial stage of development you will be able to place one character of each profession in their corresponding building: one lumberjack for a sawmill, one miner for a mine, and so on. Which character to place is up to you', //------------------------Contacts------------------------//
+        contacts_title: 'Contacts',
+
+
+        //------------------------Footer-----------------------------//
+        footer_our_products: 'Our products',
+        footer_our_products_comics: 'Comics',
+        footer_our_products_farm: 'Farm',
+        footer_our_products_soon: 'Soon',
+        footer_red_panda: 'Red Panda',
+        footer_tokenomics: 'Tokenomics',
+        footer_roadmap: 'Roadmap',
+        footer_contacts: 'Contacts'
     }
 }

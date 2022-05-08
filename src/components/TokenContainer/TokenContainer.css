@@ -50,18 +50,22 @@
 .empty-token-item {
     margin: 5px 10px;
     width: 250px;
-    height: 417px;
+    height: auto;
     position: relative;
     overflow: hidden;
     border-radius: 32px;
     background: rgba(255, 255, 255, 0.04);
 }
 
+.empty-token-item{
+    min-height: 370px;
+}
+
 .token-item-image {
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
 }
 
 .token-item-image img {
@@ -78,28 +82,6 @@
     max-width: 67px;
 }
 
-/*----------------*/
-.token-item.color1 .token-item-image {
-    background-color: #f98be5;
-}
-
-.token-item.color2 .token-item-image {
-    background-color: #ffff14;
-}
-
-.token-item.color3 .token-item-image {
-    background-color: #ff14b1;
-}
-
-.token-item.color4 .token-item-image {
-    background-color: #14ff63;
-}
-
-.token-item.color5 .token-item-image {
-    background-color: #62c7fe;
-}
-
-/*-----------------*/
 .token-item-name {
     background: rgba(21, 6, 51, 0.2);
     border-radius: 0 0 12px 12px;
@@ -120,19 +102,19 @@
 }
 
 .token-item-buy {
-    padding: 15px 15px 0;
+    padding: 15px;
 }
 
 .token-item-buy .button {
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 }
 
 .token-quantity {
     font-weight: 900;
     font-size: 36px;
     position: absolute;
-    bottom: 160px;
-    left: 180px;
+    bottom: 135px;
+    left: 190px;
     visibility: hidden;
 }
 
@@ -141,11 +123,12 @@
 }
 
 .token-item-amount {
-    margin: 0;
     font-size: 16px;
     line-height: 27px;
     text-align: center;
     color: #817499;
+    margin: 0;
+    padding-top: 15px;
 }
 
 .token-item-comment-container {
@@ -179,8 +162,8 @@
 
 .token-item-comment-frame {
     padding: 10px;
-    left: 95px;
-    bottom: 10px;
+    left: 105px;
+    bottom: 5px;
     position: relative;
 }
 
@@ -258,5 +241,9 @@
 
     .token-item-buy {
         display: none;
+    }
+    .token-quantity.isVisible {
+        /*visibility: visible;*/
+        display:none;
     }
 }

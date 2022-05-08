@@ -3,7 +3,10 @@ import React from 'react';
 import './Header.css'
 import {toggleHeaderMenu} from '../../js/script.js'
 
+import {useIntl} from 'react-intl';
+
 function Header(props) {
+    let intl = useIntl()
     function SetRussian() {
         props.changeLanguage("Ru")
     }
@@ -15,10 +18,10 @@ function Header(props) {
             <div className="header-top">
                 <div className="header_logo"></div>
                 <nav className="header_menu">
-                    <a className="header_menu_item" href="">Home</a>
-                    <a className="header_menu_item" href="">Buy NFT</a>
+                    <a className="header_menu_item" href="">{intl.formatMessage({id:'header_menu_home'})}</a>
+                    <a className="header_menu_item" href="">{intl.formatMessage({id:'header_menu_buy'})}</a>
                     <a className="header_menu_item" href="">Whitepaper</a>
-                    <a className="header_menu_item" href="">Contacts</a>
+                    <a className="header_menu_item" href="">{intl.formatMessage({id:'header_menu_contacts'})}</a>
                 </nav>
                 <a className="header_contract" href="" target="_blank">
                     0x16cd...f345

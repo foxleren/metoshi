@@ -42,17 +42,17 @@ function TableOfTokens(props) {
             let tokenInfo = Translate(token)
             return (<div className="token-item-container" key={index}>
                 <div className="token-item">
+                    <div className="token-item-name">{tokenInfo.name}</div>
                     <div className="token-item-image">
                         <img src={token.img} alt=""/>
                     </div>
-                    <div className="token-item-name">{tokenInfo.name}</div>
                     <div className="token-item-desc">{tokenInfo.description}</div>
                     {props.tabIndex === 1 ? <div className={"token-quantity isVisible"}>{token.quantity}</div> : null}
                     <div className="token-item-buy">
                         <div className="button show-popup" {...(props.tabIndex === 0 && {onClick: showPopup})}>
-                            {props.tabIndex === 0 ? intl.formatNumber(token.price) + " $METO" : "Open box"}
+                            {props.tabIndex === 0 ? intl.formatNumber(token.price) + " $METO" : intl.formatMessage({id:'chest_open'})}
                         </div>
-                        <p className="token-item-amount">Available: {token.amount}</p>
+                        {props.tabIndex === 0 ?  <p className="token-item-amount">{intl.formatMessage({id:'chest_available'})}: {token.amount}</p> : null}
                     </div>
                 </div>
                 {props.tabIndex === 0 ? <div className="token-item-comment-container">

@@ -2,11 +2,14 @@ import React from 'react'
 
 import './Contacts.css'
 
+import {useIntl} from 'react-intl'
+
 function Contacts() {
+    let intl = useIntl()
     return (
         <div className="section contacts">
             <div className="contacts_head">
-                <h2>Contacts</h2>
+                <h2>{intl.formatMessage({id:'contacts_title'})}</h2>
             </div>
             <div className="social flex">
                 <a target="_blank" href="https://www.instagram.com/metoshi_redpanda/">
