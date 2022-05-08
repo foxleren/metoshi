@@ -11,7 +11,7 @@ function Popup(){
             <div className="popup_close" onClick={closePopup}></div>
             <div className="popup_content">
                 <div className="popup_content_item">
-                    <img src="/images/redpanda3.png" alt=""/>
+                    <img src="./images/redpanda3.png" alt=""/>
                 </div>
                 <div className="popup_content_desc">
                     <h2>Lumberjack</h2>

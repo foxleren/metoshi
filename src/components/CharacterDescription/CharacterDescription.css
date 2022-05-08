@@ -50,10 +50,10 @@
 
 .character-description-text-stroke {
     background-image: url(../../../public/images/CharacterDescriptionStroke.svg);
-    padding: 21px 12px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 23px 18px;
+    background-size: contain;
     background-position: top center;
+    background-repeat: no-repeat;
     margin-left: 50px;
 }
 
@@ -80,7 +80,7 @@
         font-size: 20px;
     }
     .character-description-text-stroke {
-        padding: 10px 9px;
+        padding: 11px 9px;
     }
 }
 
@@ -98,7 +98,7 @@
     }
 
     .character-description-text-stroke {
-        padding: 8px 9px;
+        padding: 9px 9px;
     }
 }
 

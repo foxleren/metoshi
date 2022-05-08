@@ -22,10 +22,50 @@ import {messages} from './i18n/messages'
 
 let loc = 'Ru';
 let isLocaleChanged = false;
+
 function App() {
     const [values, setValues] = useState({
-        username: "Name", NFT: [{
-            img: "./metoshi/images/2.png",
+        username: "Name", NFT: [
+            {
+                img: "./images/2.png",
+                name: "Farmer's chest",
+                chestId: 1,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор урожая"
+            }, {
+                img: "./images/3.png",
+                name: "Lumberjack's chest",
+                chestId: 2,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор дерева"
+
+            }, {
+                img: "./images/4.png",
+                name: "Diggers's chest",
+                chestId: 3,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор глины"
+
+            }, {
+                img: "./images/5.png",
+                name: "Miner's chest",
+                chestId: 4,
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                quantity: 12,
+                price: 13000,
+                amount: "-",
+                comment: "сбор камня"
+            }], userChests: [{
+            img: "./images/2.png",
             name: "Farmer's chest",
             chestId: 1,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -34,7 +74,7 @@ function App() {
             amount: "-",
             comment: "сбор урожая"
         }, {
-            img: "./metoshi/images/3.png",
+            img: "./images/3.png",
             name: "Lumberjack's chest",
             chestId: 2,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -44,7 +84,7 @@ function App() {
             comment: "сбор дерева"
 
         }, {
-            img: "./metoshi/images/4.png",
+            img: "./images/4.png",
             name: "Diggers's chest",
             chestId: 3,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -54,45 +94,7 @@ function App() {
             comment: "сбор глины"
 
         }, {
-            img: "./metoshi/images/5.png",
-            name: "Miner's chest",
-            chestId: 4,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            quantity: 12,
-            price: 13000,
-            amount: "-",
-            comment: "сбор камня"
-        }], userChests: [{
-            img: "./metoshi/images/2.png",
-            name: "Farmer's chest",
-            chestId: 1,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            quantity: 12,
-            price: 13000,
-            amount: "-",
-            comment: "сбор урожая"
-        }, {
-            img: "./metoshi/images/3.png",
-            name: "Lumberjack's chest",
-            chestId: 2,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            quantity: 12,
-            price: 13000,
-            amount: "-",
-            comment: "сбор дерева"
-
-        }, {
-            img: "./metoshi/images/4.png",
-            name: "Diggers's chest",
-            chestId: 3,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            quantity: 12,
-            price: 13000,
-            amount: "-",
-            comment: "сбор глины"
-
-        }, {
-            img: "./metoshi/images/5.png",
+            img: "./images/5.png",
             name: "Miner's chest",
             chestId: 4,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -101,7 +103,7 @@ function App() {
             amount: "-",
             comment: "сбор камня"
         }], userNFT: [{
-            img: "./metoshi/images/2.png",
+            img: "./images/2.png",
             name: "Farmer's chest",
             chestId: 1,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -110,7 +112,7 @@ function App() {
             amount: "-",
             comment: "сбор урожая"
         }, {
-            img: "./metoshi/images/3.png",
+            img: "./images/3.png",
             name: "Lumberjack's chest",
             chestId: 2,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -120,7 +122,7 @@ function App() {
             comment: "сбор дерева"
 
         }, {
-            img: "./metoshi/images/4.png",
+            img: "./images/4.png",
             name: "Diggers's chest",
             chestId: 3,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -130,7 +132,7 @@ function App() {
             comment: "сбор глины"
 
         }, {
-            img: "./metoshi/images/5.png",
+            img: "./images/5.png",
             name: "Miner's chest",
             chestId: 4,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do \n' + 'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -142,6 +144,7 @@ function App() {
     })
 
     const [selectedLocale, setLocale] = React.useState(LOCALES.RUSSIAN)
+
     // changeLocaleStatus()
 
     function handleLocaleChange(locale) {

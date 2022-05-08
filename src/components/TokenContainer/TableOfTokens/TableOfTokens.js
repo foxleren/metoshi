@@ -1,5 +1,5 @@
 import React from "react"
-import {showPopup} from './metoshi/../../../../js/script.js'
+import {showPopup} from './../../../js/script.js'
 import {useIntl} from 'react-intl'
 // const intl = useIntl()
 
@@ -77,7 +77,7 @@ function TableOfTokens(props) {
         })}
         {props.tabIndex !== 0 && props.ListOfTokens.length < 10 ? Array(10 - props.ListOfTokens.length).fill(0).map((item, index) => (
             <div className="empty-token-item" key={index}>
-                <img className="empty-token-icon" src="./metoshi/images/locker.svg" alt=""/>
+                <img className="empty-token-icon" src="./images/locker.svg" alt=""/>
             </div>)) : null}
     </div>)
 }

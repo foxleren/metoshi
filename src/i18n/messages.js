@@ -1,5 +1,4 @@
 import {LOCALES} from './locales'
-import footer from "../components/Footer/Footer";
 
 export const messages = {
     [LOCALES.RUSSIAN]: {
