@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Faq.css'
 
-import {toggleFaqItem} from '../../js/script.js'
+import {toggleFaqItem} from './metoshi/../../../js/script'
 
 import {useIntl} from 'react-intl'
 

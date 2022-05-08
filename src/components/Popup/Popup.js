@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Popup.css'
 
-import {closePopup} from '../../js/script.js'
+import {closePopup} from './metoshi/../../../js/script.js'
 
 function Popup(){
 

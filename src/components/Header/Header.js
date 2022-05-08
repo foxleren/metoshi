@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Header.css'
-import {toggleHeaderMenu} from '../../js/script.js'
+import {toggleHeaderMenu} from './metoshi/../../../js/script.js'
 
 import {useIntl} from 'react-intl';
 
