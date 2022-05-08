@@ -17,6 +17,7 @@ body {
     min-width: 320px;
     color: #fff;
     background: #150633 url(../../public/images/topbg.png) 50% 0 no-repeat;
+    outline: none;
 }
 
 /*body * {*/
