@@ -3,9 +3,10 @@ import React from 'react'
 import './Popup.css'
 
 import {closePopup} from './metoshi/../../../js/script.js'
+import {useIntl} from 'react-intl'
 
-function Popup(){
-
+function Popup() {
+    let intl = useIntl()
     return (
         <div className="popup">
             <div className="popup_close" onClick={closePopup}></div>
@@ -14,12 +15,10 @@ function Popup(){
                     <img src="./images/redpanda3.png" alt=""/>
                 </div>
                 <div className="popup_content_desc">
-                    <h2>Lumberjack</h2>
+                    <h2>{intl.formatMessage({id:'popup_name'})}</h2>
                     <p>
-                        It is used to increase the bonus at the main building. When using a
-                        panda in the game, the construction time of all buildings will be
-                        reduced by
-                        <span>30%-250%!</span>
+                        {intl.formatMessage({id:'popup_description'})}
+                        <span>{intl.formatMessage({id:'popup_description_num'})}</span>
                     </p>
                     <div className="stats">
                         <div className="stat_item common">
@@ -38,7 +37,7 @@ function Popup(){
                             <span>Rare</span>
                         </div>
                     </div>
-                    <div className="button">Buy NFT</div>
+                    <div className="button">{intl.formatMessage({id:'popup_buy_nft'})}</div>
                 </div>
             </div>
         </div>

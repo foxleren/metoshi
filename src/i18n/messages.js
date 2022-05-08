@@ -96,7 +96,13 @@ export const messages = {
         footer_red_panda: 'Красная Панда',
         footer_tokenomics: 'Токеномика',
         footer_roadmap: 'Дорожная карта',
-        footer_contacts: 'Контакты'
+        footer_contacts: 'Контакты',
+
+        //---------Popup---------------//
+        popup_name: 'Дровосек',
+        popup_description: 'Используется для увеличения бонуса в главном здании. При использовании в игре время постройки всех зданий сократится на ',
+        popup_description_num: '30%-250%!',
+        popup_buy_nft: 'Купить NFT'
     }, [LOCALES.ENGLISH]: {
 
         //--------------------Header-----------------------------//
@@ -192,6 +198,16 @@ export const messages = {
         footer_red_panda: 'Red Panda',
         footer_tokenomics: 'Tokenomics',
         footer_roadmap: 'Roadmap',
-        footer_contacts: 'Contacts'
+        footer_contacts: 'Contacts',
+
+
+        //---------Popup---------------//
+        popup_name: 'Lumberjack',
+        popup_description: 'It is used to increase the bonus at the main building. When using a panda in the game, the construction time of all buildings will be reduced by ',
+        popup_description_num: '30%-250%!',
+        popup_normal: 'normal',
+        popup_rare: 'rare',
+        popup_epic: 'epic',
+        popup_buy_nft: 'Buy NFT'
     }
 }
