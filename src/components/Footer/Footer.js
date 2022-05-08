@@ -23,7 +23,7 @@ function Footer(props) {
                         <li>
                             <a href="https://metoshi.com#GameFi">
                     <span>
-                      <img src="/images/prod_devices_s.svg" alt=""/>
+                      <img src="./images/prod_devices_s.svg" alt=""/>
                     </span>
                                 GameFi
                             </a>
