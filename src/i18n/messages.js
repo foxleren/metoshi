@@ -35,7 +35,7 @@ export const messages = {
 
         //----------------------CharacterDescription-------------------------------//
         character_description_sentence1: 'Каждый персонаж имеет три вида редкости:',
-        character_description_types: 'normal, rare, epic',
+        character_description_types: 'common, rare, epic',
         character_description_sentence2: 'Используя их, ты можешь увеличить добычу того или иного ресурса в зависимости от редкости.',
         character_description_common: 'COMMON:',
         character_description_common_num: '+2000',

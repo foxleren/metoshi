@@ -23,15 +23,16 @@ function CharacterDescription() {
     return (<section className="character-description">
         <div className="character-description-container">
             <div className="character-description-text-container">
-                <div>
-                    <Star/>
-                    <div className="character-description-text">
-                        {intl.formatMessage({id: 'character_description_sentence1'})}
-                    </div>
-                </div>
-                <span className="character-description-text-stroke">
+                <Star/>
+                {/*<div>*/}
+                <div className="character-description-text">
+                    {intl.formatMessage({id: 'character_description_sentence1'})}&nbsp;
+                    <span className="character-description-text-stroke">
                         {intl.formatMessage({id: 'character_description_types'})}
                     </span>
+                </div>
+
+                {/*</div>*/}
             </div>
 
             <div className="character-description-text-container">
