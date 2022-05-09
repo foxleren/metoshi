@@ -1,2 +1,2 @@
 # Metoshi — multilingual web-site using React technology
- https://foxleren.github.io/Metoshi/
+ https://foxleren.github.io/metoshi/
