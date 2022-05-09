@@ -1,37 +1,31 @@
 import React from "react"
 import {showPopup} from './../../../js/script.js'
 import {useIntl} from 'react-intl'
-// const intl = useIntl()
 
 function TableOfTokens(props) {
-    // const intl = useIntl()
 
     function Translate(token) {
-        // const intl = useIntl()
         let translatedTokenInfo = {
-            name: '',
-            description: '',
-            accelerates: '',
-            accelerator_object: ''
+            name: '', description: '', accelerates: '', accelerator_object: ''
         }
         if (token.chestId === 1) {
             translatedTokenInfo.name = intl.formatMessage({id: 'farmer_chest'})
-            translatedTokenInfo.description = intl.formatMessage({id:'farmer_chest_description'})
+            translatedTokenInfo.description = intl.formatMessage({id: 'farmer_chest_description'})
             translatedTokenInfo.accelerator_object = intl.formatMessage({id: 'farmer_chest_accelerator_object'})
         } else if (token.chestId === 2) {
-                translatedTokenInfo.name = intl.formatMessage({id: 'lumberjack_chest'})
-                translatedTokenInfo.description = intl.formatMessage({id:'lumberjack_chest_description'})
-                translatedTokenInfo.accelerator_object = intl.formatMessage({id: 'lumberjack_chest_accelerator_object'})
+            translatedTokenInfo.name = intl.formatMessage({id: 'lumberjack_chest'})
+            translatedTokenInfo.description = intl.formatMessage({id: 'lumberjack_chest_description'})
+            translatedTokenInfo.accelerator_object = intl.formatMessage({id: 'lumberjack_chest_accelerator_object'})
         } else if (token.chestId === 3) {
             translatedTokenInfo.name = intl.formatMessage({id: 'digger_chest'})
-            translatedTokenInfo.description = intl.formatMessage({id:'digger_chest_description'})
+            translatedTokenInfo.description = intl.formatMessage({id: 'digger_chest_description'})
             translatedTokenInfo.accelerator_object = intl.formatMessage({id: 'digger_chest_accelerator_object'})
-        }else if (token.chestId === 4) {
+        } else if (token.chestId === 4) {
             translatedTokenInfo.name = intl.formatMessage({id: 'miner_chest'})
-            translatedTokenInfo.description = intl.formatMessage({id:'miner_chest_description'})
+            translatedTokenInfo.description = intl.formatMessage({id: 'miner_chest_description'})
             translatedTokenInfo.accelerator_object = intl.formatMessage({id: 'miner_chest_accelerator_object'})
         }
-        translatedTokenInfo.accelerates = intl.formatMessage({id:'chest_accelerates'})
+        translatedTokenInfo.accelerates = intl.formatMessage({id: 'chest_accelerates'})
 
         return translatedTokenInfo
     }
@@ -50,9 +44,10 @@ function TableOfTokens(props) {
                     {props.tabIndex === 1 ? <div className={"token-quantity isVisible"}>{token.quantity}</div> : null}
                     <div className="token-item-buy">
                         <div className="button show-popup" {...(props.tabIndex === 0 && {onClick: showPopup})}>
-                            {props.tabIndex === 0 ? intl.formatNumber(token.price) + " $METO" : intl.formatMessage({id:'chest_open'})}
+                            {props.tabIndex === 0 ? intl.formatNumber(token.price) + " $METO" : intl.formatMessage({id: 'chest_open'})}
                         </div>
-                        {props.tabIndex === 0 ?  <p className="token-item-amount">{intl.formatMessage({id:'chest_available'})}: {token.amount}</p> : null}
+                        {props.tabIndex === 0 ?
+                            <p className="token-item-amount">{intl.formatMessage({id: 'chest_available'})}: {token.amount}</p> : null}
                     </div>
                 </div>
                 {props.tabIndex === 0 ? <div className="token-item-comment-container">

@@ -1,23 +1,20 @@
 import React from 'react'
-
+import {useIntl} from 'react-intl'
 import './TokenContainer.css'
 import TableOfTokens from './TableOfTokens/TableOfTokens'
 
-import {useIntl} from 'react-intl'
-
 function TokenContainer(props) {
-    let intl = useIntl()
+    const intl = useIntl()
+    const [indexOfActiveTab, setIndexOfActiveTab] = React.useState(0)
     let switcherHeaders = [
         intl.formatMessage({id: 'token_container_nft'}),
         intl.formatMessage({id: 'token_container_my_chests'}),
         intl.formatMessage({id: 'token_container_my_nft'})
     ]
-    const [indexOfActiveTab, setIndexOfActiveTab] = React.useState(0)
 
     function handleTabChange(index) {
         setIndexOfActiveTab(index)
     }
-
 
     return (<div className="token-list-container">
         <div className="token-list-switcher">
@@ -29,9 +26,12 @@ function TokenContainer(props) {
             </div>))}
         </div>
 
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[0] && <TableOfTokens ListOfTokens={props.NFT} tabIndex={0}/>}
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[1] && <TableOfTokens ListOfTokens={props.UserChests} tabIndex={1}/>}
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[2] && <TableOfTokens ListOfTokens={props.UserNFT} tabIndex={2}/>}
+        {switcherHeaders[indexOfActiveTab] === switcherHeaders[0] &&
+            <TableOfTokens ListOfTokens={props.NFT} tabIndex={0}/>}
+        {switcherHeaders[indexOfActiveTab] === switcherHeaders[1] &&
+            <TableOfTokens ListOfTokens={props.UserChests} tabIndex={1}/>}
+        {switcherHeaders[indexOfActiveTab] === switcherHeaders[2] &&
+            <TableOfTokens ListOfTokens={props.UserNFT} tabIndex={2}/>}
     </div>)
 }
 

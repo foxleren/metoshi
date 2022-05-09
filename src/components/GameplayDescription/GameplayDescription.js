@@ -3,8 +3,7 @@ import React from 'react'
 import './GameplayDescription.css'
 import {useIntl} from "react-intl";
 
-function GetItems() {
-    let intl = useIntl()
+function GetItems(intl) {
     return [[{
         text: intl.formatMessage({id: 'gameplay_description_box1_item1'})
     }, {
@@ -47,8 +46,8 @@ function GetItemComponent(array) {
 }
 
 function GameplayDescription() {
-    let items = GetItems()
-    let intl = useIntl()
+    const intl = useIntl()
+    let items = GetItems(intl)
     return (<div className="GameplayDescription-container">
         <span className="GameplayDescription-title-span"></span>
         <div className="title">

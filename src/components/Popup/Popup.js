@@ -1,9 +1,9 @@
 import React from 'react'
+import {useIntl} from 'react-intl'
 
 import './Popup.css'
 
 import {closePopup} from './metoshi/../../../js/script.js'
-import {useIntl} from 'react-intl'
 
 function Popup() {
     let intl = useIntl()
