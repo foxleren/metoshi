@@ -9,8 +9,8 @@ export const messages = {
         header_menu_contacts: 'Контакты',
 
         //--------------------Welcome----------------------------//
-        welcome_buy_your_nft: 'Купи свой',
-        welcome_enter_metoland: 'Стать частью metoland',
+        welcome_buy_your_nft: 'Открыта продажа NFT Metoland !',
+        welcome_enter_metoland: 'Вход в METOLAND',
         welcome_buy: 'Купить',
 
         //-----------------TokenContainer---------------------------//
@@ -53,15 +53,15 @@ export const messages = {
 
         //------------------------GameplayDescription--------------------//
         gameplay_description_box1_title: 'Попадая в мир красных панд, ты должен расчистить свою деревню и начать строительство:',
-        gameplay_description_box1_item1: 'Лесопилка',
-        gameplay_description_box1_item2: 'Каменоломня',
-        gameplay_description_box1_item3: 'Карьер',
-        gameplay_description_box1_item4: 'И другие здания.',
+        gameplay_description_box1_item1: 'Лесопилки',
+        gameplay_description_box1_item2: 'Каменоломни',
+        gameplay_description_box1_item3: 'Карьера',
+        gameplay_description_box1_item4: 'И других зданий',
         gameplay_description_box1_item5: 'Засевай поля и собирай урожай.',
 
         gameplay_description_box2_title: 'Развивай свою деревню METOLAND собирая:',
         gameplay_description_box2_item1: 'Дерево, руду, камень, урожай, золото',
-        gameplay_description_box2_item2: 'Весь урожай вы можете продать в Фонд Бобра, тем самым получить золото ($METO) или улучшать здание для большего количества добычи',
+        gameplay_description_box2_item2: 'Весь урожай ты можешь продать в Фонд Бобра, тем самым получить золото ($METO) или улучшать здание для большего количества добычи',
         gameplay_description_box2_item3: 'В будущем ты также сможешь следить за настроением и повышать уровень счастья своих жителей, которые приносят тебе ЗОЛОТО.',
 
 
@@ -111,7 +111,7 @@ export const messages = {
         header_menu_contacts: 'Contacts',
 
         //--------------------Welcome----------------------------//
-        welcome_buy_your_nft: 'Buy your',
+        welcome_buy_your_nft: 'Get ahold of a Metoland NFT!',
         welcome_enter_metoland: 'Enter metoland',
         welcome_buy: 'Buy',
 

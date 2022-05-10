@@ -10,7 +10,6 @@ function Welcome() {
             <h1>Metoland</h1>
             <h2>
                 {intl.formatMessage({id: 'welcome_buy_your_nft'})}
-                <span> metoland</span> NFT!
             </h2>
             <div className="welcome_pet pet1"></div>
             <div className="welcome_pet pet2"></div>

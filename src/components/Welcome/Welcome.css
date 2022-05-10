@@ -78,7 +78,7 @@
 
 .welcome_pet.pet2 {
     right: 20px;
-    top: 150px;
+    top: 50px;
     width: 208px;
     height: 208px;
     background-image: url(../../../public/images/welcome_pet2.png);
@@ -165,6 +165,7 @@
 
     .welcome_pet.pet2 {
         width: 170px;
+        top: 120px;
     }
 
     .welcome_text h1 {
@@ -236,7 +237,7 @@
 
     .welcome_pet.pet2 {
         right: 15px;
-        top: 110px;
+        top: 80px;
         width: 110px;
     }
 
@@ -262,7 +263,10 @@
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 560px) {
+    .welcome {
+        padding: 10px 0;
+    }
     .welcome_text h2 span {
         display: none;
     }
@@ -272,29 +276,11 @@
         width: 90px;
     }
 
-    .welcome_pet.pet2 {
-        right: 15px;
-        width: 100px;
-        top: 60px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .welcome {
-        padding: 10px 0;
-    }
-
-    .welcome_pet.pet1 {
-        left: 15px;
-        top: 0px;
-        width: 80px;
-    }
-
-    .welcome_pet.pet2 {
-        right: 15px;
-        top: 70px;
-        width: 80px;
-    }
+    /*.welcome_pet.pet2 {*/
+    /*    right: 15px;*/
+    /*    width: 100px;*/
+    /*    top: 60px;*/
+    /*}*/
 
     .welcome_text h1 {
         margin: 0 auto;
@@ -325,6 +311,24 @@
     }
 }
 
+@media screen and (max-width: 560px) {
+    .welcome {
+        padding: 10px 0;
+    }
+
+    .welcome_pet.pet1 {
+        left: 15px;
+        top: 0px;
+        width: 80px;
+    }
+
+    .welcome_pet.pet2 {
+        right: 15px;
+        top: 30px;
+        width: 80px;
+    }
+}
+
 @media screen and (max-width: 430px) {
     .welcome_pet.pet1 {
         left: 15px;
@@ -334,7 +338,7 @@
 
     .welcome_pet.pet2 {
         right: 15px;
-        top: 85px;
+        top: 25px;
         width: 80px;
     }
 
@@ -346,7 +350,7 @@
 
     .welcome_text h2 {
         margin: -35px 0 0;
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
