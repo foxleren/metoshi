@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/metoshi/static/css/main.d52e7cfa.css",
-    "main.js": "/metoshi/static/js/main.dcd126cf.js",
+    "main.css": "/metoshi/static/css/main.4b90d16c.css",
+    "main.js": "/metoshi/static/js/main.4e3e7a71.js",
     "static/js/787.cd9a45e9.chunk.js": "/metoshi/static/js/787.cd9a45e9.chunk.js",
     "static/media/topbg.png": "/metoshi/static/media/topbg.183fe998ff37af5d6ec5.png",
     "static/media/top_right_bg.png": "/metoshi/static/media/top_right_bg.f00a1f187f7c374ae883.png",
@@ -23,12 +23,12 @@
     "static/media/bull.svg": "/metoshi/static/media/bull.d0e19a4a2cec34036876.svg",
     "static/media/icon_minus.svg": "/metoshi/static/media/icon_minus.f265e56930b9271388f2.svg",
     "static/media/icon_plus.svg": "/metoshi/static/media/icon_plus.988861661b9122c3d200.svg",
-    "main.d52e7cfa.css.map": "/metoshi/static/css/main.d52e7cfa.css.map",
-    "main.dcd126cf.js.map": "/metoshi/static/js/main.dcd126cf.js.map",
+    "main.4b90d16c.css.map": "/metoshi/static/css/main.4b90d16c.css.map",
+    "main.4e3e7a71.js.map": "/metoshi/static/js/main.4e3e7a71.js.map",
     "787.cd9a45e9.chunk.js.map": "/metoshi/static/js/787.cd9a45e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d52e7cfa.css",
-    "static/js/main.dcd126cf.js"
+    "static/css/main.4b90d16c.css",
+    "static/js/main.4e3e7a71.js"
   ]
 }
