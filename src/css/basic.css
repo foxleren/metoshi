@@ -16,8 +16,8 @@ body {
     height: auto;
     min-width: 320px;
     color: #fff;
-    background: #150633 url(../../public/images/topbg.png) 50% 0 no-repeat;
     -webkit-tap-highlight-color: transparent;
+    word-break: break-all;
 }
 
 /*body * {*/

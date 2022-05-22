@@ -105,55 +105,10 @@
     justify-content: space-evenly;
 }
 
-.welcome-button-box {
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    padding: 10px;
-}
 
-.button-enter-metoland, .button-buy-meto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 400px;
-    max-height: 90px;
-    width: 100%;
-    line-height: 20px;
-    padding: 20px 10px;
-    font-size: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    position: relative;
-    cursor: pointer;
-    /*transition: background-position 0.2s;*/
-    text-decoration: none;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 50.1%, rgba(255, 255, 255, 0.2) 100%);
-    background-size: 200%;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.3s ease-in-out;
-    height: auto;
-}
-
-.button-buy-meto:hover {
-    background-position: right center;
-}
-
-.button-enter-metoland:hover {
-    background-position: right center;
-}
-
-.button-enter-metoland {
-    background-image: linear-gradient(90deg, #B114FF 13%, #B114FF 6.81%, #FF1493 45%);
-}
-
-.button-buy-meto {
-
-}
 
 @media screen and (max-width: 1200px) {
-    /*.button-enter-metoland, .button-buy-meto {*/
+    /*.button.pink, .button.transparent {*/
     /*    width: 30%;*/
     /*}*/
 }
@@ -217,11 +172,6 @@
         left: 0;
         max-width: 100vw;
     }
-
-    .button-enter-metoland, .button-buy-meto {
-        /*line-height: 30px;*/
-        padding: 10px 25px;
-    }
 }
 
 @media screen and (max-width: 730px) {
@@ -255,18 +205,13 @@
         font-weight: 700;
         line-height: 0px;
     }
-
-    .button-enter-metoland, .button-buy-meto {
-        /*line-height: 25px;*/
-        padding: 10px 25px;
-        font-size: 15px;
-    }
 }
 
 @media screen and (max-width: 560px) {
     .welcome {
         padding: 10px 0;
     }
+
     .welcome_text h2 span {
         display: none;
     }
@@ -281,7 +226,6 @@
     /*    width: 100px;*/
     /*    top: 60px;*/
     /*}*/
-
     .welcome_text h1 {
         margin: 0 auto;
         width: 206px;
@@ -302,12 +246,6 @@
     .welcome_text {
         padding-top: 0;
         padding-bottom: 40px;
-    }
-
-    .button-enter-metoland, .button-buy-meto {
-        padding: 10px 5px;
-        font-size: 12px;
-        /*width: 40%;*/
     }
 }
 

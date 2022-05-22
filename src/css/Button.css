@@ -1,0 +1,91 @@
+.button-box {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    line-height: 20px;
+    padding: 20px 10px;
+    font-size: 20px;
+    background: linear-gradient(90deg,hsla(0,0%,100%,.1),hsla(0,0%,100%,.1) 50%,hsla(0,0%,100%,.1) 50.1%,hsla(0,0%,100%,.2));
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    /*transition: background-position 0.2s;*/
+    text-decoration: none;
+    background-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    height: auto;
+    word-break: break-all;
+
+}
+
+.button.small {
+    max-width: 150px;
+    max-height: 90px;
+}
+
+.button.medium {
+    max-width: 300px;
+    max-height: 90px;
+}
+
+.button.big {
+    max-width: 400px;
+    max-height: 90px;
+}
+
+.button.show-popup {
+    width: auto;
+}
+
+/*.button.transparent {*/
+/*    background: hsla(0,0%,100%,.1);*/
+/*}*/
+
+
+/*.button.transparent:hover {*/
+/*    background-position: 100% !important;*/
+/*}*/
+
+.button.pink {
+    background-image: linear-gradient(90deg, #B114FF 13%, #B114FF 6.81%, #FF1493 45%);
+}
+
+.button:hover {
+    background-position: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+    .button.big {
+        /*line-height: 30px;*/
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .button.big {
+        /*line-height: 25px;*/
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .button.big {
+        padding: 10px 5px;
+        font-size: 12px;
+        /*width: 40%;*/
+    }
+}
+
+

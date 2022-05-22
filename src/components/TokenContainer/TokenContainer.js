@@ -1,7 +1,7 @@
 import React from 'react'
 import {useIntl} from 'react-intl'
 import './TokenContainer.css'
-import TableOfTokens from './TableOfTokens/TableOfTokens'
+import TableOfTokens from './TableOfTokens'
 
 function TokenContainer(props) {
     const intl = useIntl()

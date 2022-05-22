@@ -3,7 +3,7 @@ import {useIntl} from 'react-intl'
 
 import './Popup.css'
 
-import {closePopup} from './metoshi/../../../js/script.js'
+import {closePopup} from './../../js/script'
 
 function Popup() {
     let intl = useIntl()
@@ -12,7 +12,7 @@ function Popup() {
             <div className="popup_close" onClick={closePopup}></div>
             <div className="popup_content">
                 <div className="popup_content_item">
-                    <img src="./images/redpanda3.png" alt=""/>
+                    <img src="./metoshi/images/redpanda3.png" alt=""/>
                 </div>
                 <div className="popup_content_desc">
                     <h2>{intl.formatMessage({id:'popup_name'})}</h2>
