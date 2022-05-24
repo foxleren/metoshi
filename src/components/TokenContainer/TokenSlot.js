@@ -1,7 +1,7 @@
 import React from "react"
-import {showPopup} from '../../js/script.js'
 import './TokenContainer.css'
 import './../Button/Button'
+import {showPopup} from "../../js/script";
 
 function TokenSlot(props) {
     return (<div className="token-item-container">
@@ -13,16 +13,19 @@ function TokenSlot(props) {
                 </div>
                 <div className="token-item-desc">{props.description}</div>
             </div>
-        {props.tabIndex === 1 ? <div className={"token-quantity isVisible"}>{props.quantity}</div> : null}
-        <div className="token-item-buy">
-            <div className="button transparent show-popup" {...(props.tabIndex === 0 && {onClick: showPopup})}>
-                {props.tabIndex === 0 ? props.tokenPrice + " $METO" : props.openMessage}
+            {props.tabIndex === 1 ? <div className={"token-quantity isVisible"}>{props.quantity}</div> : null}
+            <div className="token-item-buy">
+                <div
+                    className="button transparent show-popup" {...(props.tabIndex === 0 && {
+                    onClick: showPopup
+                })}>
+                    {props.tabIndex === 0 ? props.tokenPrice + " $METO" : props.openMessage}
+                </div>
+                {props.tabIndex === 0 ?
+                    <p className="token-item-amount">{props.chestAvailable}: {props.amount}</p> : null}
             </div>
-            {props.tabIndex === 0 ? <p className="token-item-amount">{props.chestAvailable}: {props.amount}</p> : null}
         </div>
-    </div>
-    {
-        props.tabIndex === 0 ? <div className="token-item-comment-container">
+        {props.tabIndex === 0 ? <div className="token-item-comment-container">
             <div className="token-item-comment-arrow">
                 <svg className="token-item-comment-arrow" width="24" height="60" viewBox="0 0 24 60"
                      fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,9 +42,8 @@ function TokenSlot(props) {
                  xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 25H46V0" stroke="#9A93B3" strokeOpacity="0.45" strokeWidth="2"/>
             </svg>
-        </div> : null
-    }
-</div>)
+        </div> : null}
+    </div>)
 }
 
 export default TokenSlot

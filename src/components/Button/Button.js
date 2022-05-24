@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../css/Button.css'
+import './Button.css'
 
 function Button(props) {
     return (<div className="button-box">

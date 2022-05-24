@@ -2,6 +2,7 @@ import React from 'react'
 import {useIntl} from 'react-intl'
 import './TokenContainer.css'
 import TableOfTokens from './TableOfTokens'
+import TokenListSwitcher from "./TokenListSwitcher";
 
 function TokenContainer(props) {
     const intl = useIntl()
@@ -16,23 +17,18 @@ function TokenContainer(props) {
         setIndexOfActiveTab(index)
     }
 
-    return (<div className="token-list-container">
-        <div className="token-list-switcher">
-            {switcherHeaders.map((title, index) => (<div className="switcher-option-container" key={index}>
-                <div className="switcher-option-item">
-                    <a className={"switcher-option-item-button" + (switcherHeaders[indexOfActiveTab] === title ? " selected" : "")}
-                       onClick={() => handleTabChange(index)}>{title}</a>
-                </div>
-            </div>))}
-        </div>
+    return (
+        <div className="token-list-container">
+            <TokenListSwitcher headers={switcherHeaders} tab={indexOfActiveTab} changeTab={(index) => handleTabChange(index)}/>
+            {switcherHeaders[indexOfActiveTab] === switcherHeaders[0] &&
+                <TableOfTokens ListOfTokens={props.NFT} tabIndex={0}/>}
+            {switcherHeaders[indexOfActiveTab] === switcherHeaders[1] &&
+                <TableOfTokens ListOfTokens={props.UserChests} tabIndex={1}/>}
+            {switcherHeaders[indexOfActiveTab] === switcherHeaders[2] &&
+                <TableOfTokens ListOfTokens={props.UserNFT} tabIndex={2}/>}
 
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[0] &&
-            <TableOfTokens ListOfTokens={props.NFT} tabIndex={0}/>}
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[1] &&
-            <TableOfTokens ListOfTokens={props.UserChests} tabIndex={1}/>}
-        {switcherHeaders[indexOfActiveTab] === switcherHeaders[2] &&
-            <TableOfTokens ListOfTokens={props.UserNFT} tabIndex={2}/>}
-    </div>)
+        </div>
+    )
 }
 
 export default TokenContainer

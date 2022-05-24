@@ -1,7 +1,7 @@
 import React from 'react'
 import {useIntl} from 'react-intl'
-import {toggleFaqItem} from './metoshi/../../../js/script'
 import './Faq.css'
+import ToggleItem from './ToggleItem'
 
 function GetFaqItems() {
     const intl = useIntl()
@@ -19,6 +19,10 @@ function GetFaqItems() {
         title: intl.formatMessage({id: 'faq_item_title6'}), content: intl.formatMessage({id: 'faq_item_content6'})
     }, {
         title: intl.formatMessage({id: 'faq_item_title7'}), content: intl.formatMessage({id: 'faq_item_content7'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title8'}), content: intl.formatMessage({id: 'faq_item_content8'})
+    }, {
+        title: intl.formatMessage({id: 'faq_item_title9'}), content: intl.formatMessage({id: 'faq_item_content9'})
     }]
 }
 
@@ -32,11 +36,9 @@ function Faq() {
                     FAQ
                 </h2>
             </div>
-            <div className="accordeon">
-                {faqItems.map((faqItem, index) => (<div className="item" key={index}>
-                    <p className="ttl" onClick={(e) => toggleFaqItem(e)}>{faqItem.title}</p>
-                    <div className="item_in">{faqItem.content}</div>
-                </div>))}
+            <div className="accordion">
+                {faqItems.map((faqItem, index) => (
+                    <ToggleItem key={index} title={faqItem.title} content={faqItem.content}/>))}
             </div>
         </div>
     </section>)

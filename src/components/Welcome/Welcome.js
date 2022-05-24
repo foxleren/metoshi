@@ -17,10 +17,10 @@ function Welcome() {
             <div className="welcome_pet pet2"></div>
         </div>
         <div className="welcome-button-container">
-                <Button size="big" variant="pink"
-                               content={intl.formatMessage({id: 'welcome_enter_metoland'})}/>
-                <Button size="big" variant="transparent"
-                               content={intl.formatMessage({id: 'welcome_buy'}) + " $Meto"}/>
+            <Button size="big" variant="pink"
+                    content={intl.formatMessage({id: 'welcome_enter_metoland'})}/>
+            <Button size="big" variant="transparent"
+                    content={intl.formatMessage({id: 'welcome_buy'}) + " $Meto"}/>
         </div>
     </section>)
 }

@@ -1,6 +1,4 @@
 import React from 'react';
-import '../../css/basic.css'
-import '../../css/style.css'
 import Button from "./Button";
 
 export default {
@@ -25,10 +23,7 @@ export default {
                 type: 'radio'
             }
         }
-
-
     }
-
 }
 
 const Template = (arg) => <Button {...arg}/>

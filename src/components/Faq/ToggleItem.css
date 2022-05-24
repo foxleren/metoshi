@@ -1,0 +1,68 @@
+.faq_in .accordion {
+    width: 770px;
+}
+
+.accordion .item {
+    margin-bottom: 24px;
+}
+
+.accordion .item .ttl {
+    padding-left: 52px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    cursor: pointer;
+    background: url(../../../public/images/icon_plus.svg) 20px 8px no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
+.accordion .item .ttl.active {
+    background: url(../../../public/images/icon_minus.svg) 9px 19px no-repeat;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.accordion .item-in {
+    display: none;
+    padding: 12px 0 0 0px;
+    font-size: 16px;
+    line-height: 130%;
+    color: #c2abcb;
+    transition: 0.3s ease-in-out
+}
+
+
+.ttl.active .item-in {
+    display: block;
+}
+
+@media screen and (max-width: 1700px) {
+    .faq_in .accordion {
+        width: 623px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .faq_in .accordion {
+        width: 623px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .faq_in .accordion {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .faq_in .accordion {
+        margin-left: -10px;
+        margin-right: -1px;
+    }
+
+    .accordion .item-in {
+        font-size: 12px;
+        line-height: 130%;
+    }
+}

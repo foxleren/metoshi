@@ -1,19 +1,11 @@
 import React from 'react'
 import {useIntl} from 'react-intl'
 import './Footer.css'
+import LanguagesMenu from "../LanguagesMenu/LanguagesMenu";
 
 function Footer(props) {
-    function SetRussian() {
-        props.changeLanguage("Ru")
-    }
-
-    function SetEnglish() {
-        props.changeLanguage("En")
-    }
-
     let intl = useIntl()
     return (<footer className="footer">
-
         <p className="copy">©Metoshi, 2021</p>
         <div className="botmenu">
             <ul>
@@ -83,14 +75,7 @@ function Footer(props) {
             </ul>
         </div>
         <div id="bot_r">
-            <div className="langs">
-                <div className={props.selectedLocale !== 'Ru' ? "lang_item selected" : "lang_item"}
-                     onClick={SetEnglish}>ENG
-                </div>
-                <div className={props.selectedLocale === 'Ru' ? "lang_item selected" : "lang_item"}
-                     onClick={SetRussian}>RUS
-                </div>
-            </div>
+            <LanguagesMenu size="medium" changeLanguage={props.changeLanguage} selectedLocale={props.selectedLocale}/>
         </div>
     </footer>)
 }

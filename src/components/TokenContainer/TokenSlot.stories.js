@@ -1,6 +1,4 @@
 import React from 'react';
-import './../../css/basic.css'
-import './../../css/style.css'
 import './TokenContainer.css'
 import TokenSlot from "./TokenSlot";
 

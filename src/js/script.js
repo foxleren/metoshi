@@ -44,10 +44,10 @@ export const toggleHeaderMenu = () => {
         $('body').addClass('show_menu');
     }
 }
-export const toggleFaqItem = (e) => {
-    e.target.classList.toggle('active');
-    $(e.target).next('.item_in').slideToggle();
-}
+// export const toggleFaqItem = (e) => {
+//     e.target.classList.toggle('active');
+//     $(e.target).next('.item_in').slideToggle();
+// }
 
 
 

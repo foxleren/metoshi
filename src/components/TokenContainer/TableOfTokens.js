@@ -1,6 +1,7 @@
 import React from "react"
 import {useIntl} from 'react-intl'
 import TokenSlot from './TokenSlot'
+import LockedToken from './LockedToken'
 
 function TableOfTokens(props) {
 
@@ -46,9 +47,7 @@ function TableOfTokens(props) {
                                openMessage={intl.formatMessage({id: 'chest_open'})}/>)
         })}
         {props.tabIndex !== 0 && props.ListOfTokens.length < 10 ? Array(10 - props.ListOfTokens.length).fill(0).map((item, index) => (
-            <div className="empty-token-item" key={index}>
-                <img className="empty-token-icon" src="./metoshi/images/locker.svg" alt=""/>
-            </div>)) : null}
+            <LockedToken img={"./metoshi/images/locker.svg"} key={index}/>)) : null}
     </div>)
 }
 
