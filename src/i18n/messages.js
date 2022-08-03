@@ -4,9 +4,12 @@ export const messages = {
     [LOCALES.RUSSIAN]: {
 
         //--------------------Header-----------------------------//
-        header_menu_home: 'Домой',
-        header_menu_buy: 'Купить NFT',
-        header_menu_contacts: 'Контакты',
+        perks: 'Иксы',
+        gameplay: 'Gameplay',
+        roadmap: 'Дорожная карта',
+        contacts: 'Контакты',
+        buy_meto: 'Купить METO',
+        connect_wallet: 'Подключить кошелек',
 
         //--------------------Welcome----------------------------//
         welcome_buy_your_nft: 'Открыта продажа NFT Metoland !',
@@ -107,9 +110,12 @@ export const messages = {
     }, [LOCALES.ENGLISH]: {
 
         //--------------------Header-----------------------------//
-        header_menu_home: 'Home',
-        header_menu_buy: 'Buy NFT',
-        header_menu_contacts: 'Contacts',
+        perks: 'Perks',
+        gameplay: 'Gameplay',
+        roadmap: 'RoadMap',
+        contacts: 'Contacts',
+        buy_meto: 'Buy METO',
+        connect_wallet: 'Connect wallet',
 
         //--------------------Welcome----------------------------//
         welcome_buy_your_nft: 'Get ahold of a Metoland NFT!',

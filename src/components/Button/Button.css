@@ -1,14 +1,15 @@
 .button-box {
     display: flex;
-    width: 50%;
+    /*width: 50%;*/
     justify-content: center;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .button {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     width: 100%;
     line-height: 20px;
     padding: 20px 10px;
@@ -24,8 +25,30 @@
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
     height: auto;
-    word-break: break-all;
+    /*word-break: break-all;*/
 
+}
+.button-icon {
+    width: 24px;
+    height: 24px;
+    zoom: 0.8;
+    margin-left: 5px;
+    /*background: url(../../../public/images/buy_meto.svg) no-repeat;*/
+    background-size: cover;
+}
+
+.button.lg-size {
+
+}
+
+.button.md-size {
+    padding: 20px 10px;
+    font-size: 20px;
+}
+
+.button.sm-size {
+    padding: 12px 10px;
+    font-size: 13px;
 }
 
 .button.small {
@@ -38,7 +61,7 @@
     max-height: 90px;
 }
 
-.button.big {
+.button.md-size {
     max-width: 400px;
     max-height: 90px;
 }
@@ -66,14 +89,14 @@
 
 
 @media screen and (max-width: 800px) {
-    .button.big {
+    .button.md-size {
         /*line-height: 30px;*/
         padding: 10px 25px;
     }
 }
 
 @media screen and (max-width: 730px) {
-    .button.big {
+    .button.md-size {
         /*line-height: 25px;*/
         padding: 10px 25px;
         font-size: 15px;
@@ -81,7 +104,7 @@
 }
 
 @media screen and (max-width: 560px) {
-    .button.big {
+    .button.md-size {
         padding: 10px 5px;
         font-size: 12px;
         /*width: 40%;*/

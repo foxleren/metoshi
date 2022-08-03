@@ -1,19 +1,19 @@
 .languages-menu {
-    /*margin-left: auto;*/
-    /*margin-right: 16px;*/
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .languages-menu-item {
     color: #817499;
-    padding: 8px;
-    line-height: 24px;
+    padding: 0px 4px;
+    /*line-height: 20px;*/
     position: relative;
     transition: color 0.2s;
 }
 
 .languages-menu-item.big {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .languages-menu-item.medium {
@@ -32,10 +32,10 @@
     content: "";
     background: #817499;
     width: 1px;
-    height: 24px;
+    height: 20px;
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 5px;
 }
 
 .languages-menu-item:first-child:before {
