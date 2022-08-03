@@ -47,7 +47,7 @@ function TableOfTokens(props) {
                                openMessage={intl.formatMessage({id: 'chest_open'})}/>)
         })}
         {props.tabIndex !== 0 && props.ListOfTokens.length < 10 ? Array(10 - props.ListOfTokens.length).fill(0).map((item, index) => (
-            <LockedToken img={"./metoshi/images/locker.svg"} key={index}/>)) : null}
+            <LockedToken img={"./images/locker.svg"} key={index}/>)) : null}
     </div>)
 }
 

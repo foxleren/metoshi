@@ -7,7 +7,7 @@ function GameProcessDemo() {
     return (<div className="GameProcessDemo-container">
         <div className="GameProcessDemo-stroke1">
             <div className="GameProcessDemo-stroke2">
-                <img className="GameProcessDemo-image" src="./metoshi/images/GameProcess.svg" alt={""}/>
+                <img className="GameProcessDemo-image" src="./images/GameProcess.svg" alt={""}/>
             </div>
         </div>
         <div className="GameProcessDemo-text-container">

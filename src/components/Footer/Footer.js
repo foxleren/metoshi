@@ -15,27 +15,27 @@ function Footer(props) {
                         <li>
                             <a href="https://metoshi.com#GameFi">
                                 <span>
-                                  <img src="./metoshi/images/prod_devices_s.svg" alt=""/>
+                                  <img src="./images/prod_devices_s.svg" alt=""/>
                                 </span>GameFi
                             </a>
                         </li>
                         <li>
                             <a href="https://metoshi.com#decencomics">
                                 <span>
-                                  <img src="./metoshi/images/prod_documents_s.svg" alt=""/>
+                                  <img src="./images/prod_documents_s.svg" alt=""/>
                                 </span>{intl.formatMessage({id: 'footer_our_products_comics'})}
                             </a>
                         </li>
                         <li>
                             <a href="https://metoshi.com#Farm">
-                                <span><img src="./metoshi/images/prod_fin_s.svg" alt=""/></span>
+                                <span><img src="./images/prod_fin_s.svg" alt=""/></span>
                                 {intl.formatMessage({id: 'footer_our_products_farm'})}
                             </a>
                         </li>
                         <li>
                             <a className="soon">
                                 <span>
-                                  <img src="./metoshi/images/prod_buildings_s.svg" alt=""/>
+                                  <img src="./images/prod_buildings_s.svg" alt=""/>
                                 </span>Marketplace
                                 <i>{intl.formatMessage({id: 'footer_our_products_soon'})}</i>
                             </a>
@@ -43,7 +43,7 @@ function Footer(props) {
                         <li>
                             <a className="soon">
                                 <span>
-                                  <img src="./metoshi/images/prod_finance_s.svg" alt=""/>
+                                  <img src="./images/prod_finance_s.svg" alt=""/>
                                 </span>
                                 Metoshi Swap
                                 <i>{intl.formatMessage({id: 'footer_our_products_soon'})}</i>

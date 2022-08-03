@@ -11,7 +11,7 @@ function Popup(props) {
             <div className="popup_close" onClick={closePopup}></div>
             <div className="popup_content">
                 <div className="popup_content_item">
-                    <img src="./metoshi/images/redpanda3.png" alt=""/>
+                    <img src="./images/redpanda3.png" alt=""/>
                     {/*<img src={props.tokenImg} alt=""/>*/}
                 </div>
                 <div className="popup_content_desc">

@@ -1,5 +1,5 @@
 {
-  "homepage": " https://foxleren.github.io/metoshi",
+  "homepage": ".",
   "name": "metoshi",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-intl": "^5.25.1",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "use-force-update": "^1.0.8",
     "web-vitals": "^2.1.4"
